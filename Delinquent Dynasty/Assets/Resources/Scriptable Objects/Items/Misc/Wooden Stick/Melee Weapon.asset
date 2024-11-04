@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5f59b5cbc547f4abf7edce2d46eeab, type: 3}
+  m_Name: Melee Weapon
+  m_EditorClassIdentifier: 
+  AttackTimeHours: 0
+  AttackTimeMins: 0
+  AttackTimeSecs: 30
+  SuccessEffects:
+  - activeEffectType: 3
+    EffectTarget: 2
+    EffectGenericTarget: 0
+    EffectOrigin: 0
+    EffectItemTarget: 0
+    EffectInventoryTarget: 0
+    WellnessType: 2
+    SkillType: 0
+    RelationshipStatType: 0
+    TraitType: 0
+    AttributeType: 0
+    ItemType: 0
+    InterestType: 0
+    minIntValue: -15
+    maxIntValue: -5
+    boolValue: 0
+    effectConditions: []
+  FailEffects: []
+  meleeWeaponType: 1
+  difficultyLevel: 1

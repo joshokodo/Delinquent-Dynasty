@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_LOCKPICKING_FOR_DUMB_DUMBS
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 0
+    bookCategory: 1
+    securityCategory: 0
+    foodCategory: 0
+    techCategory: 0
+    practicalUseCategory: 0
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 3
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 2
+  properties:
+  - {fileID: 11400000, guid: 2de9a3a53b4d361489b63abe0a71ca4f, type: 2}
+  - {fileID: 11400000, guid: cfc970136fb09994ea8cd9e2c8635266, type: 2}
+  - {fileID: 11400000, guid: 852be5981e01dba48a6db292314cb70e, type: 2}

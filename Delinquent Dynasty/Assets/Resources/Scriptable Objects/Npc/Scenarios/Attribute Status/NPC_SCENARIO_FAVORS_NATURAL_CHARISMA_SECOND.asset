@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f5b734d4394919a51a626a69082ee5, type: 3}
+  m_Name: NPC_SCENARIO_FAVORS_NATURAL_CHARISMA_SECOND
+  m_EditorClassIdentifier: 
+  scenarioType:
+    timeBased: 0
+    locationBased: 0
+    academicStatus: 0
+    wellnessStatus: 0
+    attributeStatus: 5
+    skillStatus: 0
+    interestStatus: 0
+    characterBio: 0
+    externalEvents: 0
+    xEnumType:
+      actionCategory: 0
+      traitType:
+        defaultCategory: 0
+        geneticCategory: 0
+        personalityCategory: 0
+        personalMaintenanceCategory: 0
+        statusCategory: 0
+      actionType:
+        LocomotionActionType: 0
+        FightingActionType: 0
+        GrapplingActionType: 0
+        CommonSocialActionType: 0
+        SkillBasedSocialActionType: 0
+        commonItemActionType: 0
+        SkillBasedItemActionType: 0
+        MiscActionType: 0
+      WellnessType: 0
+      AttributeType: 1
+      RelationshipStatType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
+      ItemType:
+        clothingCategory: 0
+        meleeCategory: 0
+        rangedCategory: 0
+        bookCategory: 0
+        securityCategory: 0
+        foodCategory: 0
+        techCategory: 0
+        practicalUseCategory: 0
+        miscCategory: 0
+        currencyCategory: 0
+      ItemProperty: 0
+      SkillType: 0
+      characterType: 0
+      LocomotionState: 0
+      KnowledgeType: 0
+      generalInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
+  groupId: Favor Charisma
+  anyCondition: 0
+  conditions:
+  - conditionType: 32
+    useGodVision: 0
+    expectedConditionValue: 1
+    primaryTarget: 1
+    secondaryTarget: 0
+    primaryNumberValue: 2
+    secondaryNumberValue: 0
+    numericComparisonSign: 1
+    aliasValue: 
+    checkHasAlias: 0
+    primaryEnumValue:
+      actionCategory: 0
+      traitType:
+        defaultCategory: 0
+        geneticCategory: 0
+        personalityCategory: 0
+        personalMaintenanceCategory: 0
+        statusCategory: 0
+      actionType:
+        LocomotionActionType: 0
+        FightingActionType: 0
+        GrapplingActionType: 0
+        CommonSocialActionType: 0
+        SkillBasedSocialActionType: 0
+        commonItemActionType: 0
+        SkillBasedItemActionType: 0
+        MiscActionType: 0
+      WellnessType: 0
+      AttributeType: 1
+      RelationshipStatType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
+      ItemType:
+        clothingCategory: 0
+        meleeCategory: 0
+        rangedCategory: 0
+        bookCategory: 0
+        securityCategory: 0
+        foodCategory: 0
+        techCategory: 0
+        practicalUseCategory: 0
+        miscCategory: 0
+        currencyCategory: 0
+      ItemProperty: 0
+      SkillType: 0
+      characterType: 0
+      LocomotionState: 0
+      KnowledgeType: 0
+      generalInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
+    secondaryEnumValue:
+      actionCategory: 0
+      traitType:
+        defaultCategory: 0
+        geneticCategory: 0
+        personalityCategory: 0
+        personalMaintenanceCategory: 0
+        statusCategory: 0
+      actionType:
+        LocomotionActionType: 0
+        FightingActionType: 0
+        GrapplingActionType: 0
+        CommonSocialActionType: 0
+        SkillBasedSocialActionType: 0
+        commonItemActionType: 0
+        SkillBasedItemActionType: 0
+        MiscActionType: 0
+      WellnessType: 0
+      AttributeType: 0
+      RelationshipStatType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
+      ItemType:
+        clothingCategory: 0
+        meleeCategory: 0
+        rangedCategory: 0
+        bookCategory: 0
+        securityCategory: 0
+        foodCategory: 0
+        techCategory: 0
+        practicalUseCategory: 0
+        miscCategory: 0
+        currencyCategory: 0
+      ItemProperty: 0
+      SkillType: 0
+      characterType: 0
+      LocomotionState: 0
+      KnowledgeType: 0
+      generalInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
+  conditionTargets: []
+  scenarioCheckType: 1

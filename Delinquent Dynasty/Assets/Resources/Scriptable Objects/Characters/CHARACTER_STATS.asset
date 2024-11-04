@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daeb6b436123404cbe164e5746dfbba8, type: 3}
+  m_Name: CHARACTER_STATS
+  m_EditorClassIdentifier: 
+  XpToAttributeLevel2: 0
+  XpToAttributeLevel3: 0
+  XpToAttributeLevel4: 0
+  XpToAttributeLevel5: 0
+  XpToAttributeLevel6: 0
+  XpToAttributeLevel7: 0
+  XpToAttributeLevel8: 0
+  XpToAttributeLevel9: 0
+  XpToAttributeLevel10: 0
+  XpToAttributeLevel11: 0
+  XpToAttributeLevel12: 0
+  XpToAttributeLevel13: 0
+  XpToAttributeLevel14: 0
+  XpToAttributeLevel15: 0
+  XpToAttributeLevel16: 0
+  XpToAttributeLevel17: 0
+  XpToAttributeLevel18: 0
+  XpToAttributeLevel19: 0
+  XpToAttributeLevel20: 0

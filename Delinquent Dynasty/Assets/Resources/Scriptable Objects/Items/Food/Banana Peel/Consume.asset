@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a6f8f4fa4647042a857f2a3a10f086, type: 3}
+  m_Name: Consume
+  m_EditorClassIdentifier: 
+  consumeHrs: 0
+  consumeMins: 0
+  consumeSecs: 20
+  itemAfterConsume: 0
+  successEffects:
+  - activeEffectType: 3
+    EffectTarget: 1
+    EffectOrigin: 0
+    EffectItemTarget: 3
+    EffectInventoryTarget: 1
+    EffectKnowledgeTarget: 0
+    WellnessType: 1
+    SkillType: 0
+    RelationshipStatType: 0
+    TraitType: 0
+    AttributeType: 0
+    ItemType: 0
+    InterestType: 0
+    minIntValue: -10
+    maxIntValue: -10
+    boolValue: 0
+    effectConditions: []

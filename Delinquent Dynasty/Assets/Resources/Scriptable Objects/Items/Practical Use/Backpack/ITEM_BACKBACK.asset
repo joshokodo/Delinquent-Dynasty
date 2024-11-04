@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_BACKBACK
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 0
+    bookCategory: 0
+    securityCategory: 0
+    foodCategory: 0
+    techCategory: 0
+    practicalUseCategory: 1
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 3
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 3
+  properties:
+  - {fileID: 11400000, guid: de2be95d89e626e4cbc5bc41ef39e725, type: 2}
+  - {fileID: 11400000, guid: f277598ed280b6949bd3dd87c87106a6, type: 2}

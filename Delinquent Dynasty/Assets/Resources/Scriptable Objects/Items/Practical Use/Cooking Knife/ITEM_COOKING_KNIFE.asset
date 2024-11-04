@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_COOKING_KNIFE
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 0
+    bookCategory: 0
+    securityCategory: 0
+    foodCategory: 0
+    techCategory: 0
+    practicalUseCategory: 8
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 2
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 1
+  properties:
+  - {fileID: 11400000, guid: 745d8dbc16305b047af21b32cdbdd46a, type: 2}
+  - {fileID: 11400000, guid: d98bb9b1eb6506b4a929304845b9b7a4, type: 2}
+  - {fileID: 11400000, guid: 70b628319cb8dd74aba8bad27665a1fc, type: 2}

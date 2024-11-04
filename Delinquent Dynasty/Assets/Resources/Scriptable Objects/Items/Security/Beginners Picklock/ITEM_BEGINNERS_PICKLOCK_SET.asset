@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_BEGINNERS_PICKLOCK_SET
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 0
+    bookCategory: 0
+    securityCategory: 3
+    foodCategory: 0
+    techCategory: 0
+    practicalUseCategory: 0
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 3
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 2
+  properties:
+  - {fileID: 11400000, guid: 49f682c65561510498bb6b2ec63741a6, type: 2}
+  - {fileID: 11400000, guid: a5dd31ad29118da4e80355e4145ecdcf, type: 2}

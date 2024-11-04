@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_MILK
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 0
+    bookCategory: 0
+    securityCategory: 0
+    foodCategory: 47
+    techCategory: 0
+    practicalUseCategory: 0
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 2
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 2
+  properties:
+  - {fileID: 11400000, guid: 13c9c27fb9819cb48a4ba7a9446ac33a, type: 2}
+  - {fileID: 11400000, guid: 01c0c5500a65a5846bd08b1745dd7dac, type: 2}
+  - {fileID: 11400000, guid: d1b56f75c98f1304cbb0e8a2d42b191d, type: 2}

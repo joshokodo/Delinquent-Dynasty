@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d02d02d2f70b964aa8166468422b6a1, type: 3}
+  m_Name: PROTO_FEMALE_CAFETERIA_WORKER
+  m_EditorClassIdentifier: 
+  randomName: 1
+  firstName: 
+  middleInitial: 84
+  lastName: 
+  isFemale: 1
+  seniorityType: 0
+  characterType: 1
+  initTraits: []
+  initSkills: 0100000003000000
+  initialStrength: 0
+  initialDexterity: 0
+  initialIntelligence: 0
+  initialWisdom: 0
+  initialVitality: 0
+  initialCharisma: 0
+  initialPhysicalHealth: 500
+  initialMentalHealth: 500
+  initialEnergy: 500
+  initialFocus: 500
+  initialNurishment: 500
+  initialHappiness: 500
+  initialSleep: 500
+  initialHygiene: 500
+  initItems: []
+  initInterest: []

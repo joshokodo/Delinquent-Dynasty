@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fff4c70ee73424c81fc7c388e31ed2, type: 3}
+  m_Name: ITEM_SIMPLE_SLING_SHOT
+  m_EditorClassIdentifier: 
+  itemType:
+    clothingCategory: 0
+    meleeCategory: 0
+    rangedCategory: 1
+    bookCategory: 0
+    securityCategory: 0
+    foodCategory: 0
+    techCategory: 0
+    practicalUseCategory: 0
+    miscCategory: 0
+    currencyCategory: 0
+  rarityType: 4
+  itemSprite: {fileID: 0}
+  description: 
+  weight: 5
+  properties:
+  - {fileID: 11400000, guid: f15cdff0d18d1864f8bd7fb4e7cb3c06, type: 2}
+  - {fileID: 11400000, guid: 57134ad662ffca74ca371e46c1628ad0, type: 2}
+  - {fileID: 11400000, guid: 55b152e36244cd04481ae4b9d3470187, type: 2}

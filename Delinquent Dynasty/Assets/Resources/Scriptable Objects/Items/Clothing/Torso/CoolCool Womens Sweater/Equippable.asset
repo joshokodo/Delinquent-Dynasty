@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7bd791d13648aa9b34373940a293a6, type: 3}
+  m_Name: Equippable
+  m_EditorClassIdentifier: 
+  EquipmentType: 3
+  isFemale: 1
+  meshIndex: 6
+  primaryMaterialIndex: 66
+  secondaryMaterialIndex: 10
+  tertiaryMaterialIndex: 0
+  baseAwareness: 0
+  baseDetection: 0
+  equipHours: 0
+  equipMins: 0
+  equipSecs: 5
+  unequipHours: 0
+  unequipMins: 0
+  unequipSecs: 3
+  effects:
+  - passiveEffectType: 2
+    wellnessType: 0
+    skillType: 0
+    relationshipStatType: 1
+    traitType: 0
+    attributeType: 0
+    minIntValue: 5
+    maxIntValue: 5
+    effectConditions: []
+  - passiveEffectType: 1
+    wellnessType: 0
+    skillType: 0
+    relationshipStatType: 1
+    traitType: 0
+    attributeType: 1
+    minIntValue: 1
+    maxIntValue: 1
+    effectConditions: []
