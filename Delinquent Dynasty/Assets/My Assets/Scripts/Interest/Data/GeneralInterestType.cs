@@ -1,0 +1,16 @@
+﻿public enum GeneralInterestType {
+    NONE,
+    POP_MUSIC,
+    X_POP_MUSIC,
+    RAP_MUSIC,
+    ROCK_MUSIC,
+    EDM_MUSIC,
+    CLASSICAL_MUSIC,
+    FASHION,
+    VLOGGING,
+    ACTION_GAMES,
+    SPORTS_GAMES,
+    STRATEGY_GAMES,
+    SHOOTER_GAMES,
+    CASUAL_GAMES,
+}

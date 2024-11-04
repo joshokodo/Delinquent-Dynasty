@@ -1,0 +1,12 @@
+﻿public enum CharacterType {
+    NONE,
+    TEACHER,
+    STUDENT,
+    JANITOR,
+    CAFETERIA_WORKER,
+    MAINTANENCE_WORKER,
+    SECURITY_OFFICER,
+    PRINCIPAL,
+    VICE_PRINCIPAL,
+    GUIDANCE_CONSOLOR,
+}

@@ -1,0 +1,18 @@
+﻿public enum PracticalUseItemCategory {
+    NONE,
+    BACKPACK,
+    BASIC_NOTEBOOK,
+    WOODEN_PENCIL,
+    TOILET_PAPER,
+    WORK_IN_PROGRESS_ITEM,
+    SPATULA,
+    COOKING_TONGS,
+    COOKING_KNIFE,
+    LADDLE,
+    FRYING_PAN,
+    POT,
+    BAKING_PAN,
+    BAKING_SHEET,
+    MEAT_GRINDER,
+    TRASH_BAG,
+}

@@ -1,0 +1,12 @@
+﻿public enum SkillsStatusScenarioType {
+    NONE = default,
+    FAVORS_SKILL_X_FIRST,
+    FAVORS_SKILL_X_SECOND,
+    FAVORS_SKILL_X_THIRD,
+    SKILL_LEVEL_5,
+    SKILL_LEVEL_4,
+    SKILL_LEVEL_3,
+    SKILL_LEVEL_2,
+    SKILL_LEVEL_1,
+    FAVORS_SKILL_X_FOR_FIGHTING
+}
