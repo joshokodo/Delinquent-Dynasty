@@ -116,10 +116,19 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
         }
 
         if (found){
-            RelationshipElement relX = default;
+            RelationshipElement relX = new RelationshipElement(){
+                Character = secondaryTarget,
+                MainTitle = RelationshipMainTitleType.ACQUAINTANCE
+            };
+            
             var relXIndex = 0;
             var xHasRel = false;
-            RelationshipElement relY = default;
+            
+            RelationshipElement relY = new RelationshipElement(){
+                Character = primaryTarget,
+                MainTitle = RelationshipMainTitleType.ACQUAINTANCE
+            };
+            
             var relYIndex = 0;
             var yHasRel = false;
 
@@ -147,12 +156,8 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
                 foundInterest.RemoveAt(next);
                 var knowledgeType = learningKnowledge.GetKnowledgeType();
 
-                if (xHasRel){
-                    relX.AffectStat(RelationshipStatType.RAPPORT, 1);
-                }
-                if (yHasRel){
-                    relY.AffectStat(RelationshipStatType.RAPPORT, 1);
-                }
+                relX.AffectStat(RelationshipStatType.RAPPORT,  1);
+                relY.AffectStat(RelationshipStatType.RAPPORT, 1);
                 
                 if (Display){
                     DisplaySpawnElements.Add(new DisplayDamageSpawnElement(){
@@ -212,10 +217,34 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             
             if (xHasRel){
                 PrimaryRelationships[relXIndex] = relX;
+            } else {
+                PrimaryRelationships.Add(relX);
             }
             if (yHasRel){
                 SecondaryRelationships[relYIndex] = relY;
+            } else {
+                SecondaryRelationships.Add(relY);
             }
+            
+            KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                LearningEntity = secondaryTarget,
+                KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                PrimaryTarget = primaryTarget,
+                SecondaryTarget = secondaryTarget,
+                PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RAPPORT),
+                IntValue = relX.Rapport
+            });
+            
+            KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                LearningEntity = primaryTarget,
+                KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                PrimaryTarget = secondaryTarget,
+                SecondaryTarget = primaryTarget,
+                PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RAPPORT),
+                IntValue = relY.Rapport
+            });
+
+         
         }
     }
 

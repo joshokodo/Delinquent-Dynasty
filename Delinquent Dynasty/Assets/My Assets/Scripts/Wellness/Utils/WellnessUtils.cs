@@ -31,7 +31,7 @@ public struct WellnessUtils {
     }
 
     public int GetBaseMax(WellnessType wellnessType){
-        return GetWellness(wellnessType, out _).Max;
+        return GetWellness(wellnessType, out _).BaseMax;
     }
 
     public bool MeetsCost(ActionBaseAssetData actData, PassiveEffectsUtils utils){

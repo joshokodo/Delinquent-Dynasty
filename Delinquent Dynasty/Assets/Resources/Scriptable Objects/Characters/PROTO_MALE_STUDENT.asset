@@ -25,7 +25,9 @@ MonoBehaviour:
     personalityCategory: 0
     wellBeingCategory: 0
     statusCategory: 0
-  initSkills: []
+  initSkills:
+  - SkillType: 2
+    InitialLevel: 5
   initialStrength: 0
   initialDexterity: 0
   initialIntelligence: 0

@@ -190,6 +190,22 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
                     SecondaryEnumValue = learningKnowledge.SecondaryEnum,
                     IntValue = learningKnowledge.ValueX
                 });
+                
+                KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                    LearningEntity = primaryTarget,
+                    KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                    PrimaryTarget = secondaryTarget,
+                    SecondaryTarget = primaryTarget,
+                    PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
+                });
+
+                KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                    LearningEntity = secondaryTarget,
+                    KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                    PrimaryTarget = primaryTarget,
+                    SecondaryTarget = secondaryTarget,
+                    PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
+                });
 
                 if (data.SourceLearnsKnowledge){
                     KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){

@@ -5,11 +5,10 @@ using UnityEngine;
 public struct WellnessElement : IBufferElementData {
     public WellnessType WellnessType;
     public int CurrentValue;
-    public int Max;
-    public int Min;
+    public int BaseMax => 200;
 
     public void AddValue(int val, int bonusMax){
-        var max = Max + bonusMax;
-        CurrentValue = Mathf.Clamp(CurrentValue + val, Min, max);
+        var max = BaseMax + bonusMax;
+        CurrentValue = Mathf.Clamp(CurrentValue + val, 0, max);
     }
 }

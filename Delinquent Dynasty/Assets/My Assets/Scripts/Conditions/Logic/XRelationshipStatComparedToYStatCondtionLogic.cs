@@ -31,7 +31,6 @@ public struct XRelationshipStatComparedToYStatCondtionLogic : IConditionCheck {
             }
         }
 
-        Debug.Log("is " + xOpinion + " " + conditionData.NumericComparisonSign + " " + yOpinion + " " + NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, xOpinion, yOpinion));
         return NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, xOpinion, yOpinion)
                == conditionData.ExpectedConditionValue;
     }

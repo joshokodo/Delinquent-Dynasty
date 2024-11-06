@@ -20,7 +20,7 @@ MonoBehaviour:
   seniorityType: 0
   characterType: 1
   initTraits: []
-  initSkills: 0100000003000000
+  initSkills: []
   initialStrength: 0
   initialDexterity: 0
   initialIntelligence: 0

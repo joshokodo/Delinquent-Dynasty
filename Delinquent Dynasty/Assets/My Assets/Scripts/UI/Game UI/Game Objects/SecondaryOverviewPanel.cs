@@ -81,18 +81,32 @@ public class SecondaryOverviewPanel : MonoBehaviour {
     public void ResetWellness(){
         focus.Value = 0;
         focusText.text = "Focus: ???/???";
+        focus.Max = 200;
+        
         energy.Value = 0;
         energyText.text = "Energy: ???/???";
+        energy.Max = 200;
+        
         physicalHealth.Value = 0;
         physicalHealthText.text = "Health: ???/???";
+        physicalHealth.Max = 200;
+        
         happiness.Value = 0;
         happinessText.text = "Happiness: ???/???";
+        happiness.Max = 200;
+        
         sleep.Value = 0;
         sleepText.text = "Sleep: ???/???";
+        sleep.Max = 200;
+        
         hygiene.Value = 0;
         hygieneText.text = "Hygiene: ???/???";
+        hygiene.Max = 200;
+        
         nourishment.Value = 0;
         nourishmentText.text = "Nourishment: ???/???";
+        nourishment.Max = 200;
+        
     }
 
     public void ResetAttributes(){
