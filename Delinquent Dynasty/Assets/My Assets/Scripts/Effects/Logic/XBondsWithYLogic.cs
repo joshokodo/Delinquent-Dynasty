@@ -38,7 +38,7 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
                     si.InterestValue > 0){
                     var diff = Mathf.Max(pi.InterestValue, si.InterestValue) -
                                Mathf.Min(pi.InterestValue, si.InterestValue);
-                    if (diff <= 50){
+                    if (diff <= 10){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -60,7 +60,7 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primAtt, secdAtt) -
                                Mathf.Min(primAtt, secdAtt);
-                    if (diff <= 4){
+                    if (diff <= 1){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -81,7 +81,7 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primSkl, secdSkill) -
                                Mathf.Min(primSkl, secdSkill);
-                    if (diff <= 1){
+                    if (diff <= 0){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -102,7 +102,7 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primWel, secdWel) -
                                Mathf.Min(primWel, secdWel);
-                    if (diff <= 1){
+                    if (diff <= 10){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){

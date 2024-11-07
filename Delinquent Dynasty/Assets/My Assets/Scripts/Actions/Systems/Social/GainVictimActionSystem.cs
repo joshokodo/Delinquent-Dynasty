@@ -7,7 +7,7 @@ using Unity.Jobs;
 [UpdateInGroup(typeof(ActionsGroup))]
 [BurstCompile]
 public partial struct GainVictimActionSystem : ISystem {
-   private PerformActionUtil _perform;
+ private PerformActionUtil _perform;
     private TriggerInfluencedActionEffectsUtil _triggerInfluenced;
 
     public void OnCreate(ref SystemState state){

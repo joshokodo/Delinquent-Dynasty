@@ -69,45 +69,75 @@ public struct RelationshipUtils : FunctionalStruct {
     public int GetInfluenceSuccessChance(ActionBaseAssetData actionData,
         BufferLookup<RelationshipElement> relationshipsLookup, Entity origin, Entity target,
         PassiveEffectsUtils originPassiveUtils, PassiveEffectsUtils targetPassiveUtils){
+        
         var originInfluenceOverTarget = targetPassiveUtils.GetNaturalAndBonusInfluence(relationshipsLookup, origin,
             target, actionData.SkillUsed, actionData.ActionType);
+        
         originInfluenceOverTarget = Mathf.Max(originInfluenceOverTarget, 0);
+        
         var targetInfluenceOverOrigin = originPassiveUtils.GetNaturalAndBonusInfluence(relationshipsLookup, target,
             origin, actionData.SkillUsed, actionData.ActionType, false);
+        
         var denominator = originInfluenceOverTarget + targetInfluenceOverOrigin + actionData.DifficultyLevel;
-        if (denominator <= 0 && originInfluenceOverTarget > 0){
-            return 100;
-        }
+
+        var chance = 0;
 
         if (originInfluenceOverTarget > 0){
-            return Mathf.RoundToInt(100 * ((float) originInfluenceOverTarget / denominator));
+            chance = denominator <= 0 ? 100 : Mathf.RoundToInt(100 * ((float) originInfluenceOverTarget / denominator));
         }
 
-        return 0;
+        return chance;
     }
 
     public int GetInfluenceSuccessChanceWithStrings(ActionBaseAssetData actionData,
         BufferLookup<RelationshipElement> relationshipsLookup, Entity origin, Entity target,
-        PassiveEffectsUtils originPassiveUtils, PassiveEffectsUtils targetPassiveUtils, out int baseInfluence,
-        out int targetBaseInfluence, out int totalInfluence, out int targetTotalInfluence,
+        PassiveEffectsUtils originPassiveUtils, PassiveEffectsUtils targetPassiveUtils, out int numeratorTotal, out int denominatorTotal,
         out FixedString4096Bytes numeratorBreakDown, out FixedString4096Bytes denominatorBreakDown){
-        totalInfluence = originPassiveUtils.GetNaturalAndBonusInfluenceWithString(relationshipsLookup, origin, target,
-            actionData.SkillUsed, actionData.ActionType, out baseInfluence, out numeratorBreakDown);
-        totalInfluence = Mathf.Max(totalInfluence, 0);
-        var targetInfluenceOverOrigin = targetPassiveUtils.GetNaturalAndBonusInfluenceWithString(relationshipsLookup,
-            target, origin, actionData.SkillUsed, actionData.ActionType, out targetBaseInfluence,
-            out denominatorBreakDown, false);
-        targetTotalInfluence = totalInfluence + targetInfluenceOverOrigin + actionData.DifficultyLevel;
+        
+        var totalInfluence = originPassiveUtils.GetNaturalAndBonusInfluenceWithString(relationshipsLookup, origin, target,
+            actionData.SkillUsed, actionData.ActionType, out numeratorBreakDown);
 
-        if (targetTotalInfluence <= 0 && totalInfluence > 0){
-            return 100;
-        }
+        numeratorTotal = totalInfluence;
+        
+        totalInfluence = Mathf.Max(totalInfluence, 0);
+        
+        var targetInfluenceOverOrigin = targetPassiveUtils.GetNaturalAndBonusInfluence(relationshipsLookup,
+            target, origin, actionData.SkillUsed, actionData.ActionType, false);
+
+        
+        var totalResistance = totalInfluence + targetInfluenceOverOrigin + actionData.DifficultyLevel;
+        denominatorTotal = totalResistance;
+
+        var chance = 0;
 
         if (totalInfluence > 0){
-            return Mathf.RoundToInt(100 * ((float) totalInfluence / targetTotalInfluence));
+            chance = totalResistance <= 0 ? 100 : Mathf.RoundToInt(100 * ((float) totalInfluence / totalResistance));
+        }
+        
+        
+        if (numeratorTotal <= 0){
+            denominatorBreakDown = numeratorTotal.ToString();
+        }
+        else{
+            denominatorBreakDown = "+" + numeratorTotal;
         }
 
-        return 0;
+        denominatorBreakDown.Append(" (Total Influence Over Target)\n");
+        
+        if (targetInfluenceOverOrigin <= 0){
+            denominatorBreakDown.Append(targetInfluenceOverOrigin.ToString());
+        }
+        else{
+            denominatorBreakDown.Append("+" + targetInfluenceOverOrigin);
+        }
+
+        denominatorBreakDown.Append(" (Target's Influence Over You)\n");
+
+        if (actionData.DifficultyLevel > 0){
+            denominatorBreakDown.Append("+" + actionData.DifficultyLevel + " (Difficulty Level)");
+        }
+
+        return chance;
     }
 
     public int GetRelationshipStat(Entity target, DynamicBuffer<RelationshipElement> buffer, RelationshipStatType relationshipStatType){

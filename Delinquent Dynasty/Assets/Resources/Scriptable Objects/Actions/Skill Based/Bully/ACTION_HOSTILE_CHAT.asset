@@ -126,7 +126,7 @@ MonoBehaviour:
   genericDescription: 
   actionTitleString: 
   performingActionString: 
-  focusCost: -6
+  focusCost: -1
   energyCost: 0
   difficultyLevel: 7
   performHours: 0
@@ -669,8 +669,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 2
-      maxIntValue: 4
+      minIntValue: 1
+      maxIntValue: 2
     - activeEffectType: 26
       effectPrimaryTarget: 2
       effectSecondaryTarget: 1
@@ -1026,8 +1026,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 3
-      maxIntValue: 6
+      minIntValue: 1
+      maxIntValue: 4
     - activeEffectType: 26
       effectPrimaryTarget: 2
       effectSecondaryTarget: 1
@@ -1202,7 +1202,7 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: -2
+      minIntValue: -1
       maxIntValue: 0
     anyCondition: 0
     conditions: []
@@ -1383,8 +1383,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 4
-      maxIntValue: 8
+      minIntValue: 1
+      maxIntValue: 6
     - activeEffectType: 26
       effectPrimaryTarget: 2
       effectSecondaryTarget: 1
@@ -1740,8 +1740,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 5
-      maxIntValue: 10
+      minIntValue: 1
+      maxIntValue: 8
     - activeEffectType: 26
       effectPrimaryTarget: 2
       effectSecondaryTarget: 1
@@ -1916,7 +1916,7 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: -3
+      minIntValue: -2
       maxIntValue: 0
     anyCondition: 0
     conditions: []
@@ -2097,8 +2097,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 6
-      maxIntValue: 12
+      minIntValue: 1
+      maxIntValue: 10
     - activeEffectType: 26
       effectPrimaryTarget: 2
       effectSecondaryTarget: 1
@@ -3838,7 +3838,7 @@ MonoBehaviour:
       expectedConditionValue: 1
       primaryTarget: 0
       secondaryTarget: 0
-      primaryNumberValue: 2
+      primaryNumberValue: 7
       secondaryNumberValue: 0
       numericComparisonSign: 5
       aliasValue: 
@@ -4113,7 +4113,7 @@ MonoBehaviour:
       expectedConditionValue: 1
       primaryTarget: 0
       secondaryTarget: 0
-      primaryNumberValue: 4
+      primaryNumberValue: 6
       secondaryNumberValue: 0
       numericComparisonSign: 5
       aliasValue: 
@@ -4388,7 +4388,7 @@ MonoBehaviour:
       expectedConditionValue: 1
       primaryTarget: 0
       secondaryTarget: 0
-      primaryNumberValue: 6
+      primaryNumberValue: 5
       secondaryNumberValue: 0
       numericComparisonSign: 5
       aliasValue: 
@@ -4663,7 +4663,7 @@ MonoBehaviour:
       expectedConditionValue: 1
       primaryTarget: 0
       secondaryTarget: 0
-      primaryNumberValue: 8
+      primaryNumberValue: 4
       secondaryNumberValue: 0
       numericComparisonSign: 5
       aliasValue: 
@@ -4938,7 +4938,7 @@ MonoBehaviour:
       expectedConditionValue: 1
       primaryTarget: 0
       secondaryTarget: 0
-      primaryNumberValue: 10
+      primaryNumberValue: 3
       secondaryNumberValue: 0
       numericComparisonSign: 5
       aliasValue: 

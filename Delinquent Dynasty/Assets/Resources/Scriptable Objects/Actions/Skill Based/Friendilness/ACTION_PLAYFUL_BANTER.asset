@@ -126,7 +126,7 @@ MonoBehaviour:
   genericDescription: 
   actionTitleString: 
   performingActionString: 
-  focusCost: -6
+  focusCost: -2
   energyCost: 0
   difficultyLevel: 7
   performHours: 0
@@ -490,11 +490,11 @@ MonoBehaviour:
         classRoomSubject: 0
       minIntValue: 10
       maxIntValue: 10
-    - activeEffectType: 11
-      effectPrimaryTarget: 1
-      effectSecondaryTarget: 0
-      displayToWorld: 0
-      originLearnsKnowledge: 0
+    - activeEffectType: 26
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
       primaryEnumValue:
         actionCategory: 0
         traitType:
@@ -502,7 +502,7 @@ MonoBehaviour:
           geneticCategory: 0
           personalityCategory: 0
           wellBeingCategory: 0
-          statusCategory: 0
+          statusCategory: 5
         actionType:
           LocomotionActionType: 0
           FightingActionType: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
           MiscActionType: 0
         WellnessType: 0
         AttributeType: 0
-        RelationshipStatType: 0
+        RelationshipStatType: 6
         relationshipMainTitleType: 0
         relationshipSubTitleType: 0
         ItemType:
@@ -529,7 +529,7 @@ MonoBehaviour:
           miscCategory: 0
           currencyCategory: 0
         ItemProperty: 0
-        SkillType: 2
+        SkillType: 0
         characterType: 0
         LocomotionState: 0
         KnowledgeType: 0
@@ -664,8 +664,184 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 10
-      maxIntValue: 10
+      minIntValue: 0
+      maxIntValue: 1
+    - activeEffectType: 26
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 5
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 5
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -1
+      maxIntValue: 0
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 2
@@ -847,6 +1023,182 @@ MonoBehaviour:
         classRoomSubject: 0
       minIntValue: 1
       maxIntValue: 2
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -2
+      maxIntValue: -1
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 3
@@ -1028,6 +1380,182 @@ MonoBehaviour:
         classRoomSubject: 0
       minIntValue: 1
       maxIntValue: 3
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -3
+      maxIntValue: -1
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 4
@@ -1209,6 +1737,182 @@ MonoBehaviour:
         classRoomSubject: 0
       minIntValue: 1
       maxIntValue: 4
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -4
+      maxIntValue: -1
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 5
@@ -1390,11 +2094,363 @@ MonoBehaviour:
         classRoomSubject: 0
       minIntValue: 1
       maxIntValue: 5
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -5
+      maxIntValue: -1
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 2
-    skillNumericComparison: 6
+    skillNumericComparison: 1
     effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 2
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -1602,7 +2658,7 @@ MonoBehaviour:
           MiscActionType: 0
         WellnessType: 0
         AttributeType: 0
-        RelationshipStatType: 3
+        RelationshipStatType: 6
         relationshipMainTitleType: 0
         relationshipSubTitleType: 0
         ItemType:
@@ -1670,6 +2726,182 @@ MonoBehaviour:
   - skillLevelRequirement: 3
     skillNumericComparison: 1
     effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 3
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -1877,7 +3109,7 @@ MonoBehaviour:
           MiscActionType: 0
         WellnessType: 0
         AttributeType: 0
-        RelationshipStatType: 3
+        RelationshipStatType: 6
         relationshipMainTitleType: 0
         relationshipSubTitleType: 0
         ItemType:
@@ -1945,6 +3177,182 @@ MonoBehaviour:
   - skillLevelRequirement: 4
     skillNumericComparison: 1
     effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 4
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -2152,7 +3560,7 @@ MonoBehaviour:
           MiscActionType: 0
         WellnessType: 0
         AttributeType: 0
-        RelationshipStatType: 3
+        RelationshipStatType: 6
         relationshipMainTitleType: 0
         relationshipSubTitleType: 0
         ItemType:
@@ -2220,6 +3628,182 @@ MonoBehaviour:
   - skillLevelRequirement: 5
     skillNumericComparison: 1
     effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 5
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -2427,7 +4011,1811 @@ MonoBehaviour:
           MiscActionType: 0
         WellnessType: 0
         AttributeType: 0
+        RelationshipStatType: 6
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+  - skillLevelRequirement: 2
+    skillNumericComparison: 1
+    effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 2
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
         RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -2
+      maxIntValue: -1
+    anyCondition: 0
+    conditions:
+    - conditionType: 9
+      useGodVision: 0
+      expectedConditionValue: 1
+      primaryTarget: 1
+      secondaryTarget: 2
+      primaryNumberValue: 25
+      secondaryNumberValue: 0
+      numericComparisonSign: 4
+      aliasValue: 
+      checkHasAlias: 0
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 6
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+  - skillLevelRequirement: 3
+    skillNumericComparison: 1
+    effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 3
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -3
+      maxIntValue: -1
+    anyCondition: 0
+    conditions:
+    - conditionType: 9
+      useGodVision: 0
+      expectedConditionValue: 1
+      primaryTarget: 1
+      secondaryTarget: 2
+      primaryNumberValue: 25
+      secondaryNumberValue: 0
+      numericComparisonSign: 4
+      aliasValue: 
+      checkHasAlias: 0
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 6
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+  - skillLevelRequirement: 4
+    skillNumericComparison: 1
+    effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 4
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -4
+      maxIntValue: -1
+    anyCondition: 0
+    conditions:
+    - conditionType: 9
+      useGodVision: 0
+      expectedConditionValue: 1
+      primaryTarget: 1
+      secondaryTarget: 2
+      primaryNumberValue: 25
+      secondaryNumberValue: 0
+      numericComparisonSign: 4
+      aliasValue: 
+      checkHasAlias: 0
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 6
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+  - skillLevelRequirement: 5
+    skillNumericComparison: 1
+    effects:
+    - activeEffectType: 4
+      effectPrimaryTarget: 2
+      effectSecondaryTarget: 1
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 1
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: 1
+      maxIntValue: 5
+    - activeEffectType: 4
+      effectPrimaryTarget: 1
+      effectSecondaryTarget: 2
+      displayToWorld: 1
+      originLearnsKnowledge: 1
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 3
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      secondaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      tertiaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      primaryNumberScale: 0
+      primaryEnumScale:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
+        ItemType:
+          clothingCategory: 0
+          meleeCategory: 0
+          rangedCategory: 0
+          bookCategory: 0
+          securityCategory: 0
+          foodCategory: 0
+          techCategory: 0
+          practicalUseCategory: 0
+          miscCategory: 0
+          currencyCategory: 0
+        ItemProperty: 0
+        SkillType: 0
+        characterType: 0
+        LocomotionState: 0
+        KnowledgeType: 0
+        generalInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
+      minIntValue: -5
+      maxIntValue: -1
+    anyCondition: 0
+    conditions:
+    - conditionType: 9
+      useGodVision: 0
+      expectedConditionValue: 1
+      primaryTarget: 1
+      secondaryTarget: 2
+      primaryNumberValue: 25
+      secondaryNumberValue: 0
+      numericComparisonSign: 4
+      aliasValue: 
+      checkHasAlias: 0
+      primaryEnumValue:
+        actionCategory: 0
+        traitType:
+          defaultCategory: 0
+          geneticCategory: 0
+          personalityCategory: 0
+          wellBeingCategory: 0
+          statusCategory: 0
+        actionType:
+          LocomotionActionType: 0
+          FightingActionType: 0
+          GrapplingActionType: 0
+          CommonSocialActionType: 0
+          SkillBasedSocialActionType: 0
+          commonItemActionType: 0
+          SkillBasedItemActionType: 0
+          MiscActionType: 0
+        WellnessType: 0
+        AttributeType: 0
+        RelationshipStatType: 6
         relationshipMainTitleType: 0
         relationshipSubTitleType: 0
         ItemType:

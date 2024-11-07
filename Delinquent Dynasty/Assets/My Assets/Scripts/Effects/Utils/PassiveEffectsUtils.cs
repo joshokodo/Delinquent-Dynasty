@@ -9,6 +9,7 @@ public struct PassiveEffectsUtils {
     public DynamicBuffer<TraitElement> Traits;
     public DynamicBuffer<PassiveEffectElement> Passives;
     public DynamicBuffer<SkillElement> Skills;
+    public DynamicBuffer<RelationshipElement> Relationships;
 
     public ComponentLookup<PassiveEffectComponent> PassiveCompLookup;
 
@@ -1117,29 +1118,24 @@ public struct PassiveEffectsUtils {
     }
 
     public int GetNaturalAndBonusInfluenceWithString(BufferLookup<RelationshipElement> relationshipsLookup,
-        Entity origin, Entity target, SkillType skillType, DynamicActionType dynamicActionType, out int baseInfluence,
+        Entity origin, Entity target, SkillType skillType, DynamicActionType dynamicActionType,
         out FixedString4096Bytes displayText, bool checkOnTriggerEffects = true){
         var influence = 0;
         var bonus = 0;
         var targRel = relationshipsLookup[target];
-        var origRel = relationshipsLookup[origin];
+        
         displayText = new();
 
         foreach (var relationshipElement in targRel){
             if (relationshipElement.Character == origin){
                 influence = relationshipElement.TotalInfluence;
+                displayText.Append(influence <= 0 ? influence.ToString() : "+" + influence);
+                displayText.Append(" (Influence Over Target)\n");
+
                 break;
             }
         }
 
-        foreach (var relationshipElement in origRel){
-            if (relationshipElement.Character == target){
-                influence += relationshipElement.Resentment + relationshipElement.Entitlement;
-                break;
-            }
-        }
-
-        baseInfluence = influence;
         for (var i = 0; i < Passives.Length; i++){
             var passive = PassiveCompLookup[Passives[i].EffectEntity];
             if (!passive.IsValid){

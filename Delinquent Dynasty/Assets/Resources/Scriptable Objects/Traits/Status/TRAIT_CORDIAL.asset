@@ -168,8 +168,8 @@ MonoBehaviour:
       applyToActionTargetCharacter: 0
       displayTriggerEffect: 0
       sourcesLearnEffect: 0
-      minIntValue: -50
-      maxIntValue: -50
+      minIntValue: -25
+      maxIntValue: -25
     - passiveEffectTriggerType: 2
       passiveEffectSubjectType: 2
       passiveEffectType: 3
@@ -313,8 +313,8 @@ MonoBehaviour:
       applyToActionTargetCharacter: 0
       displayTriggerEffect: 0
       sourcesLearnEffect: 0
-      minIntValue: -50
-      maxIntValue: -50
+      minIntValue: -25
+      maxIntValue: -25
     anyCondition: 0
     conditions: []
   expireHours: 0

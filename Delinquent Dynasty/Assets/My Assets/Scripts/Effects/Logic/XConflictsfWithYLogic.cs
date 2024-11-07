@@ -39,7 +39,7 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
                     var absSi = Mathf.Abs(si.InterestValue);
 
                     var diff = Mathf.Max(absPi, absSi) - Mathf.Min(absPi, absSi);
-                    if (diff <= 50){
+                    if (diff >= 100){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -61,7 +61,7 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primAtt, secdAtt) -
                                Mathf.Min(primAtt, secdAtt);
-                    if (diff >= 5){
+                    if (diff >= 4){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -82,7 +82,7 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primSkl, secdSkill) -
                                Mathf.Min(primSkl, secdSkill);
-                    if (diff > 1){
+                    if (diff >= 1){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -103,7 +103,7 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
 
                     var diff = Mathf.Max(primWel, secdWel) -
                                Mathf.Min(primWel, secdWel);
-                    if (diff > 1){
+                    if (diff >= 100){
                         found = true;
 
                         foundInterest.Add(new EffectCommonStatData(){
@@ -117,10 +117,19 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
         }
 
         if (found){
-            RelationshipElement relX = default;
+            RelationshipElement relX = new RelationshipElement(){
+                Character = secondaryTarget,
+                MainTitle = RelationshipMainTitleType.ACQUAINTANCE
+            };
+
             var relXIndex = 0;
             var xHasRel = false;
-            RelationshipElement relY = default;
+
+            RelationshipElement relY = new RelationshipElement(){
+                Character = primaryTarget,
+                MainTitle = RelationshipMainTitleType.ACQUAINTANCE
+            };
+
             var relYIndex = 0;
             var yHasRel = false;
 
@@ -148,13 +157,8 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
                 foundInterest.RemoveAt(next);
                 var knowledgeType = learningKnowledge.GetKnowledgeType();
 
-                if (xHasRel){
-                    relX.AffectStat(RelationshipStatType.RESENTMENT, 1);
-                }
-
-                if (yHasRel){
-                    relY.AffectStat(RelationshipStatType.RESENTMENT, 1);
-                }
+                relX.AffectStat(RelationshipStatType.RESENTMENT, 1);
+                relY.AffectStat(RelationshipStatType.RESENTMENT, 1);
 
                 if (Display){
                     DisplaySpawnElements.Add(new DisplayDamageSpawnElement(){
@@ -190,22 +194,6 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
                     SecondaryEnumValue = learningKnowledge.SecondaryEnum,
                     IntValue = learningKnowledge.ValueX
                 });
-                
-                KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
-                    LearningEntity = primaryTarget,
-                    KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
-                    PrimaryTarget = secondaryTarget,
-                    SecondaryTarget = primaryTarget,
-                    PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
-                });
-
-                KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
-                    LearningEntity = secondaryTarget,
-                    KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
-                    PrimaryTarget = primaryTarget,
-                    SecondaryTarget = secondaryTarget,
-                    PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
-                });
 
                 if (data.SourceLearnsKnowledge){
                     KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
@@ -231,10 +219,34 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
             if (xHasRel){
                 PrimaryRelationships[relXIndex] = relX;
             }
+            else{
+                PrimaryRelationships.Add(relX);
+            }
 
             if (yHasRel){
                 SecondaryRelationships[relYIndex] = relY;
             }
+            else{
+                SecondaryRelationships.Add(relY);
+            }
+
+            KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                LearningEntity = secondaryTarget,
+                KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                PrimaryTarget = primaryTarget,
+                SecondaryTarget = secondaryTarget,
+                PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
+                IntValue = relX.Resentment
+            });
+
+            KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){
+                LearningEntity = primaryTarget,
+                KnowledgeType = KnowledgeType.LAST_KNOWN_RELATIONSHIP_STAT,
+                PrimaryTarget = secondaryTarget,
+                SecondaryTarget = primaryTarget,
+                PrimaryEnumValue = new DynamicGameEnum(RelationshipStatType.RESENTMENT),
+                IntValue = relY.Resentment
+            });
         }
     }
 }
