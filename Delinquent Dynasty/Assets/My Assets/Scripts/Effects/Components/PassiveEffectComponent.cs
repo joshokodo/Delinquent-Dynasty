@@ -32,4 +32,15 @@ public struct PassiveEffectComponent : IComponentData {
     public void SetNextIntValue(RefRW<RandomComponent> randomComponent){
         NextIntValue = Data.PrimaryNumberRangeValue.GetNextInt(randomComponent);
     }
+
+    public Entity GetTargetOfType(TargetType type){
+        if (PrimaryTargetType == type){
+            return PrimaryTarget;
+        }
+        if (SecondaryTargetType == type){
+            return SecondaryTarget;
+        }
+
+        return default;
+    }
 }

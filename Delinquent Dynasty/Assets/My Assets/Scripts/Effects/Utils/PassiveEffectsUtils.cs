@@ -211,7 +211,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_AFFECT_SPECIFIC_TARGETS_STAT:
-                        if (passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -225,7 +225,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_INCREASE_SPECIFIC_TARGETS_STAT:
-                        if (isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (isPositive && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -239,7 +239,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_DECREASE_SPECIFIC_TARGETS_STAT:
-                        if (!isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (!isPositive && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -431,7 +431,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_AFFECTS_STAT:
-                        if (passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -445,7 +445,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_DECREASES_STAT:
-                        if (!isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (!isPositive && passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -459,7 +459,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_INCREASES_STAT:
-                        if (isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (isPositive && passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -544,7 +544,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_AFFECT_SPECIFIC_TARGETS_STAT:
-                        if (passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -558,7 +558,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_INCREASE_SPECIFIC_TARGETS_STAT:
-                        if (isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (isPositive && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -572,7 +572,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_DECREASE_SPECIFIC_TARGETS_STAT:
-                        if (!isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (!isPositive && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == target && passive.GetTargetOfType(TargetType.SELF) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -650,7 +650,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_AFFECTS_STAT:
-                        if (passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -664,7 +664,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_DECREASES_STAT:
-                        if (!isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (!isPositive && passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -678,7 +678,7 @@ public struct PassiveEffectsUtils {
                         break;
 
                     case PassiveEffectTriggerType.ON_SPECIFIC_TARGETS_INCREASES_STAT:
-                        if (isPositive && passive.SecondaryTarget == target && passive.PrimaryTarget == origin){
+                        if (isPositive && passive.GetTargetOfType(TargetType.SELF) == target && passive.GetTargetOfType(TargetType.TARGET_CHARACTER) == origin){
                             if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                                 bonus += GetFlatBonus(passive);
                                 percentage = GetPercentBonus(passive, percentage);
@@ -773,6 +773,8 @@ public struct PassiveEffectsUtils {
             var passive = PassiveCompLookup[Passives[i].EffectEntity];
 
             var nextText = new FixedString128Bytes();
+            var nextPercentText = new FixedString128Bytes();
+            
             if (!passive.IsValid || passive.Data.PassiveEffectSubject !=
                 PassiveEffectSubjectType.ACTION_DIFFICULTY_LEVEL){
                 continue;
@@ -782,7 +784,7 @@ public struct PassiveEffectsUtils {
                 case PassiveEffectTriggerType.ON_ALL_ACTION_PERFORM:
                     if (passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                         bonus += GetFlatBonusWithString(passive, out nextText);
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -791,7 +793,7 @@ public struct PassiveEffectsUtils {
                     if (skillType == passive.Data.PrimaryEnumValue.SkillType && skillType != SkillType.COMMON &&
                         passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                         bonus += GetFlatBonusWithString(passive, out nextText);
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -800,7 +802,7 @@ public struct PassiveEffectsUtils {
                     if (skillType != SkillType.COMMON &&
                         passive.Data.PassiveEffectType == PassiveEffectType.AFFECT_INCOMING_VALUE){
                         bonus += GetFlatBonusWithString(passive, out nextText);
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -808,7 +810,10 @@ public struct PassiveEffectsUtils {
 
             if (!nextText.IsEmpty){
                 displayText.Append("\n" + nextText.Value);
-                displayText.Append(nextText.Value);
+            }
+            
+            if (!nextPercentText.IsEmpty){
+                displayText.Append("\n" + nextPercentText.Value);
             }
         }
 
@@ -1353,6 +1358,7 @@ public struct PassiveEffectsUtils {
         for (var i = 0; i < Passives.Length; i++){
             var passive = PassiveCompLookup[Passives[i].EffectEntity];
 
+            FixedString128Bytes nextPercentText = new();
             if (!passive.IsValid ||
                 passive.Data.PassiveEffectSubject != PassiveEffectSubjectType.ACTION_PERFORM_TIME){
                 continue;
@@ -1366,7 +1372,7 @@ public struct PassiveEffectsUtils {
                         displayText.Append((bonusVal < 0 ? "-" : "+") +
                                            TimeUtils.GetGameTimeSpanString(bonusVal).Value + "\n");
                         bonus += bonusVal;
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -1377,7 +1383,7 @@ public struct PassiveEffectsUtils {
                         displayText.Append((bonusVal < 0 ? "-" : "+") +
                                            TimeUtils.GetGameTimeSpanString(bonusVal).Value + "\n");
                         bonus += bonusVal;
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -1389,7 +1395,7 @@ public struct PassiveEffectsUtils {
                         displayText.Append((bonusVal < 0 ? "-" : "+") +
                                            TimeUtils.GetGameTimeSpanString(bonusVal).Value + "\n");
                         bonus += bonusVal;
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
@@ -1401,11 +1407,13 @@ public struct PassiveEffectsUtils {
                         displayText.Append((bonusVal < 0 ? "-" : "+") +
                                            TimeUtils.GetGameTimeSpanString(bonusVal).Value + "\n");
                         bonus += bonusVal;
-                        percentage = GetPercentBonus(passive, percentage);
+                        percentage = GetPercentBonusWithString(passive, percentage, out nextPercentText);
                     }
 
                     break;
             }
+
+            displayText.Append(nextPercentText);
         }
 
         performTime += bonus;
@@ -1858,6 +1866,63 @@ public struct PassiveEffectsUtils {
             case NumberScaleType.SCALE_BY_CURRENT_WELLNESS_PERCENTAGE:
                 percentage += (passive.NextIntValue *
                                wellnessUtils.GetCurrentValue(passive.Data.BonusEnumValue.WellnessType));
+                break;
+            
+            case NumberScaleType.SCALE_BY_RELATIONSHIP_STAT_FOR_SPECIFIC_TARGET:
+                var rel = new RelationshipUtils().GetRelationshipStat(
+                    passive.GetTargetOfType(TargetType.TARGET_CHARACTER), Relationships,
+                    passive.Data.BonusEnumValue.RelationshipStatType);
+                percentage += (passive.NextIntValue * rel);
+                break;
+        }
+
+        return percentage;
+    }
+    
+    private int GetPercentBonusWithString(PassiveEffectComponent passive, int percentage, out FixedString128Bytes text){
+        var wellnessUtils = new WellnessUtils(){
+            Wellness = CharacterWellness
+        };
+        
+        text = new FixedString128Bytes();
+        var bonus = 0;
+        switch (passive.Data.BonusNumericType){
+            case NumberScaleType.PERCENTAGE:
+                percentage += passive.NextIntValue;
+                break;
+
+            case NumberScaleType.SCALE_BY_ATTRIBUTE_FLAT_PERCENTAGE:
+                var attributeType = passive.Data.BonusEnumValue.AttributeType;
+                var attributeTotalLvl = GetNaturalAndBonusAttributeTotal(attributeType);
+                bonus = (attributeTotalLvl * passive.NextIntValue);
+                percentage += bonus;
+                text = new FixedString128Bytes((bonus >= 0 ? "+" : "") + bonus + "% (Scaled By " + attributeType +")");
+                break;
+
+            case NumberScaleType.SCALE_BY_TRAIT_INTENSITY_PERCENTAGE:
+                var intensity =
+                    GetTotalTraitIntensity(passive.Data.BonusEnumValue.GetTraitType());
+                bonus = (passive.NextIntValue * intensity);
+                percentage += bonus;
+                text = new FixedString128Bytes((bonus >= 0 ? "+" : "") + bonus + "% (Scaled By " + StringUtils.GetTraitTypeString(passive.Data.BonusEnumValue.GetTraitType()) +")");
+                break;
+
+            case NumberScaleType.SCALE_BY_CURRENT_WELLNESS_PERCENTAGE:
+              
+                bonus = passive.NextIntValue *
+                        wellnessUtils.GetCurrentValue(passive.Data.BonusEnumValue.WellnessType);
+                percentage += bonus;
+                text = new FixedString128Bytes((bonus >= 0 ? "+" : "") + bonus + "% (Scaled By " + passive.Data.BonusEnumValue.WellnessType +")");
+                break;
+            
+            case NumberScaleType.SCALE_BY_RELATIONSHIP_STAT_FOR_SPECIFIC_TARGET:
+                var rel = new RelationshipUtils().GetRelationshipStat(
+                    passive.GetTargetOfType(TargetType.TARGET_CHARACTER), Relationships,
+                    passive.Data.BonusEnumValue.RelationshipStatType);
+                bonus = passive.NextIntValue * rel;
+                percentage += bonus;
+                text = new FixedString128Bytes((bonus >= 0 ? "+" : "") + bonus + "% (Scaled By " + passive.Data.BonusEnumValue.RelationshipStatType +")");
+         
                 break;
         }
 

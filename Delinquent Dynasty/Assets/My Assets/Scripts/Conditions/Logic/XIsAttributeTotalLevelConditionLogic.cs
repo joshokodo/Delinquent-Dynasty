@@ -1,13 +1,12 @@
 ﻿public struct XIsAttributeTotalLevelConditionLogic : IConditionCheck {
     public bool Result(ConditionUtils utils, ConditionData conditionData){
         var target = utils.TargetsGroup.GetPrimaryTargetEntity(conditionData);
+        var val = 0;
         if (utils.TryCreatePassiveUtils(target, out PassiveEffectsUtils passives)){
-            var currentLevel = passives.GetNaturalAndBonusAttributeTotal(conditionData.PrimaryEnumValue.AttributeType);
-            var value = (int) conditionData.PrimaryNumberValue;
-            return NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, currentLevel, value) ==
-                   conditionData.ExpectedConditionValue;
+            val = passives.GetNaturalAndBonusAttributeTotal(conditionData.PrimaryEnumValue.AttributeType);
         }
 
-        return !conditionData.ExpectedConditionValue;
+        return NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, val, (int) conditionData.PrimaryNumberValue) ==
+               conditionData.ExpectedConditionValue;
     }
 }

@@ -9,7 +9,7 @@ public class FoodBarBaker : Baker<FoodBarAuthoring> {
         AddComponent(typeof(FoodBarComponent));
         AddComponent(new InteractableInventoryComponent(){
             CarryLimit = 50,
-            InventoryTempurature = TemperatureType.HOT
+            InventoryTemperature = TemperatureType.HOT
         });
         AddComponent(typeof(SecurityLockSocket));
         AddComponent(new InteractableLocationComponent());

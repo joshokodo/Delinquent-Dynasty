@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using System;
+using Unity.Entities;
 
 public struct XInventoryHasFreeSpaceCountConditionLogic : IConditionCheck {
     public bool Result(ConditionUtils utils, ConditionData conditionData){
@@ -9,11 +10,8 @@ public struct XInventoryHasFreeSpaceCountConditionLogic : IConditionCheck {
                 var limit = 0;
                 var carrying = items.Length;
                 var space = 0;
-
-                if (utils.CharacterBioLookup.TryGetComponent(x, out CharacterBio bio)){
-                    limit = bio.CarryLimit;
-                }
-                else if (utils.InteractableInventoryLookup.TryGetComponent(x, out InteractableInventoryComponent inv)){
+                
+                if (utils.InteractableInventoryLookup.TryGetComponent(x, out InteractableInventoryComponent inv)){
                     limit = inv.CarryLimit;
                 }
                 else if (utils.ItemInventoryCompLookup.TryGetComponent(x, out ItemInventoryComponent itemInv)){
@@ -21,10 +19,11 @@ public struct XInventoryHasFreeSpaceCountConditionLogic : IConditionCheck {
                 }
 
                 if (limit == 0){
-                    space = -1;
+                    limit = Int32.MaxValue;
                 }
-                else if (carrying < limit){
-                    space = limit - carrying;
+                
+                if (carrying < limit){
+                    space = carrying - limit;
                 }
 
                 return NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, space,

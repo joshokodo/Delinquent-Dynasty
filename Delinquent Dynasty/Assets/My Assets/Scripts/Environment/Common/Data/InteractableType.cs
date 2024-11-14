@@ -9,4 +9,7 @@
     BED,
     STOVE,
     OVEN,
+    FRIDGE,
+    FOOD_BAR,
+    TRASH_CAN,
 }

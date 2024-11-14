@@ -4,18 +4,10 @@ using Unity.Entities;
 using UnityEngine;
 
 public struct XBondsWithYLogic : IApplyActiveEffect {
-    public DynamicBuffer<RelationshipElement> PrimaryRelationships;
     public DynamicBuffer<InterestElement> PrimaryInterest;
-    public DynamicBuffer<WellnessElement> PrimaryWellness;
-    public DynamicBuffer<CharacterAttributeElement> PrimaryAttributes;
-    public DynamicBuffer<SkillElement> PrimarySkills;
     public PassiveEffectsUtils PrimaryPassives;
 
-    public DynamicBuffer<RelationshipElement> SecondaryRelationships;
     public DynamicBuffer<InterestElement> SecondaryInterest;
-    public DynamicBuffer<WellnessElement> SecondaryWellness;
-    public DynamicBuffer<CharacterAttributeElement> SecondaryAttributes;
-    public DynamicBuffer<SkillElement> SecondarySkills;
     public PassiveEffectsUtils SecondaryPassives;
 
     public bool Display;
@@ -52,8 +44,8 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             }
         }
 
-        foreach (var pa in PrimaryAttributes){
-            foreach (var sa in SecondaryAttributes){
+        foreach (var pa in PrimaryPassives.CharacterAttributes){
+            foreach (var sa in SecondaryPassives.CharacterAttributes){
                 if (pa.AttributeType == sa.AttributeType){
                     var primAtt = PrimaryPassives.GetNaturalAndBonusAttributeTotal(pa.AttributeType);
                     var secdAtt = SecondaryPassives.GetNaturalAndBonusAttributeTotal(sa.AttributeType);
@@ -73,8 +65,8 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             }
         }
 
-        foreach (var ps in PrimarySkills){
-            foreach (var ss in SecondarySkills){
+        foreach (var ps in PrimaryPassives.Skills){
+            foreach (var ss in SecondaryPassives.Skills){
                 if (ps.SkillType == ss.SkillType){
                     var primSkl = PrimaryPassives.GetNaturalAndBonusSkillLevel(ps.SkillType);
                     var secdSkill = SecondaryPassives.GetNaturalAndBonusSkillLevel(ss.SkillType);
@@ -94,8 +86,8 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             }
         }
         
-        foreach (var pw in PrimaryWellness){
-            foreach (var sw in SecondaryWellness){
+        foreach (var pw in PrimaryPassives.CharacterWellness){
+            foreach (var sw in SecondaryPassives.CharacterWellness){
                 if (pw.WellnessType == sw.WellnessType){
                     var primWel = pw.CurrentValue;
                     var secdWel = sw.CurrentValue;
@@ -132,18 +124,18 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             var relYIndex = 0;
             var yHasRel = false;
 
-            for (var i = 0; i < PrimaryRelationships.Length; i++){
-                if (PrimaryRelationships[i].Character == secondaryTarget){
-                    relX = PrimaryRelationships[i];
+            for (var i = 0; i < PrimaryPassives.Relationships.Length; i++){
+                if (PrimaryPassives.Relationships[i].Character == secondaryTarget){
+                    relX = PrimaryPassives.Relationships[i];
                     relXIndex = i;
                     xHasRel = true;
                     break;
                 }
             }
 
-            for (var i = 0; i < SecondaryRelationships.Length; i++){
-                if (SecondaryRelationships[i].Character == primaryTarget){
-                    relY = SecondaryRelationships[i];
+            for (var i = 0; i < SecondaryPassives.Relationships.Length; i++){
+                if (SecondaryPassives.Relationships[i].Character == primaryTarget){
+                    relY = SecondaryPassives.Relationships[i];
                     relYIndex = i;
                     yHasRel = true;
                     break;
@@ -216,14 +208,14 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
             }
             
             if (xHasRel){
-                PrimaryRelationships[relXIndex] = relX;
+                PrimaryPassives.Relationships[relXIndex] = relX;
             } else {
-                PrimaryRelationships.Add(relX);
+                PrimaryPassives.Relationships.Add(relX);
             }
             if (yHasRel){
-                SecondaryRelationships[relYIndex] = relY;
+                SecondaryPassives.Relationships[relYIndex] = relY;
             } else {
-                SecondaryRelationships.Add(relY);
+                SecondaryPassives.Relationships.Add(relY);
             }
             
             KnowledgeSpawnElements.Add(new KnowledgeSpawnElement(){

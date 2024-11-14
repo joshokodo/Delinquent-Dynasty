@@ -3,8 +3,6 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 
 public struct ExclusivelyAffectRelationshipStateForXAndYLogic : IApplyActiveEffect {
-    public DynamicBuffer<RelationshipElement> PrimaryRelationships;
-    public DynamicBuffer<RelationshipElement> SecondaryRelationships;
 
     public PassiveEffectsUtils PrimaryPassives;
     public PassiveEffectsUtils SecondaryPassives;
@@ -33,7 +31,7 @@ public struct ExclusivelyAffectRelationshipStateForXAndYLogic : IApplyActiveEffe
             ActiveEffectsSpawn, out int totalBonus);
 
         var resultingStatVal = utils.AffectRelationshipStat(secondaryTarget, primaryTarget,
-            data.PrimaryEnumValue.RelationshipStatType, number, SecondaryRelationships, PassivesSpawn,
+            data.PrimaryEnumValue.RelationshipStatType, number, SecondaryPassives.Relationships, PassivesSpawn,
             CharacterDataStore, RelationshipMainTitleType.ACQUAINTANCE);
 
         if (Display){
@@ -62,7 +60,7 @@ public struct ExclusivelyAffectRelationshipStateForXAndYLogic : IApplyActiveEffe
             ActiveEffectsSpawn, out int secondTotalBonus);
 
         var secondResultingStatVal = utils.AffectRelationshipStat(primaryTarget, secondaryTarget,
-            data.PrimaryEnumValue.RelationshipStatType, number, PrimaryRelationships, PassivesSpawn, CharacterDataStore,
+            data.PrimaryEnumValue.RelationshipStatType, number, PrimaryPassives.Relationships, PassivesSpawn, CharacterDataStore,
             RelationshipMainTitleType.ACQUAINTANCE);
 
         if (Display){

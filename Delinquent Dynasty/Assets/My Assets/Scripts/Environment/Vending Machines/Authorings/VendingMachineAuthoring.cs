@@ -8,7 +8,7 @@ public class VendingMachineBaker : Baker<VendingMachineAuthoring> {
         AddComponent(new VendingMachineTag());
         AddComponent(new InteractableInventoryComponent(){
             CarryLimit = 100,
-            InventoryTempurature = TemperatureType.MID
+            InventoryTemperature = TemperatureType.MID
         });
         AddComponent(new InteractableLocationComponent());
         AddComponent(typeof(SecurityLockSocket));

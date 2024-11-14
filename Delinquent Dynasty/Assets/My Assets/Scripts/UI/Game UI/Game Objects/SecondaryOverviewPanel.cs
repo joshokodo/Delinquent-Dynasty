@@ -64,9 +64,6 @@ public class SecondaryOverviewPanel : MonoBehaviour {
     public Image YourRapportPosFill;
     public Image TheirRapportPosFill;
 
-    // public Image YourStrifePosFill;
-    // public Image TheirStrifePosFill;
-
     public TooltipStringViewer CharacterTitleTT;
     public TooltipStringViewer AdmirationTT;
     public TooltipStringViewer AttractionTT;
@@ -122,18 +119,30 @@ public class SecondaryOverviewPanel : MonoBehaviour {
         AdmirationTT.Data = "Admiration\nTheirs: ???\n";
         YourAdmirationPosFill.fillAmount = 0;
         YourAdmirationNegFill.fillAmount = 0;
+        
+        YourAdmirationNegFill.gameObject.SetActive(false);
+        TheirAdmirationNegFill.gameObject.SetActive(false);
+        
         TheirAdmirationPosFill.fillAmount = 0;
         TheirAdmirationNegFill.fillAmount = 0;
 
         AttractionTT.Data = "Attraction\nTheirs: ???\n";
         YourAttractionPosFill.fillAmount = 0;
         YourAttractionNegFill.fillAmount = 0;
+        
+        YourAttractionNegFill.gameObject.SetActive(false);
+        TheirAttractionNegFill.gameObject.SetActive(false);
+        
         TheirAttractionPosFill.fillAmount = 0;
         TheirAttractionNegFill.fillAmount = 0;
 
         FearTT.Data = "Fear\nTheirs: ???\n";
         YourFearPosFill.fillAmount = 0;
         YourFearNegFill.fillAmount = 0;
+        
+        YourFearNegFill.gameObject.SetActive(false);
+        TheirFearNegFill.gameObject.SetActive(false);
+        
         TheirFearPosFill.fillAmount = 0;
         TheirFearNegFill.fillAmount = 0;
 

@@ -25,7 +25,7 @@ MonoBehaviour:
   targetTypes: 06000000
   skillUsed: 0
   quickActionCategory: 5
-  usesLocomotion: 0
+  usesLocomotion: 1
   usesInfluence: 0
   prerequisites:
   - conditionType: 36

@@ -8,7 +8,7 @@ public class StoveBaker : Baker<StoveAuthoring> {
         AddComponent(typeof(StoveComponent));
         AddComponent(new InteractableInventoryComponent(){
             CarryLimit = 50,
-            InventoryTempurature = TemperatureType.MID
+            InventoryTemperature = TemperatureType.MID
         });
         AddComponent(new InteractableLocationComponent());
         AddBuffer<ItemElement>();

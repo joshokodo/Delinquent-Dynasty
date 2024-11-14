@@ -168,7 +168,7 @@ MonoBehaviour:
       applyToActionTargetCharacter: 0
       displayTriggerEffect: 1
       sourcesLearnEffect: 0
-      minIntValue: 0
+      minIntValue: 1
       maxIntValue: 2
     - passiveEffectTriggerType: 8
       passiveEffectSubjectType: 2
@@ -313,7 +313,7 @@ MonoBehaviour:
       applyToActionTargetCharacter: 0
       displayTriggerEffect: 1
       sourcesLearnEffect: 0
-      minIntValue: 0
+      minIntValue: 1
       maxIntValue: 2
     anyCondition: 0
     conditions: []

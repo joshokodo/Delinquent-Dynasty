@@ -8,7 +8,7 @@ public class FridgeBaker : Baker<FridgeAuthoring> {
         AddComponent(typeof(FridgeComponent));
         AddComponent(new InteractableInventoryComponent(){
             CarryLimit = 100,
-            InventoryTempurature = TemperatureType.COLD
+            InventoryTemperature = TemperatureType.COLD
         });
         AddComponent(typeof(SecurityLockSocket));
         AddComponent(new InteractableLocationComponent());

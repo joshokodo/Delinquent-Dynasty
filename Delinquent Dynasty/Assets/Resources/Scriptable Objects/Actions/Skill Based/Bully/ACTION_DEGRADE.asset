@@ -128,7 +128,7 @@ MonoBehaviour:
   performingActionString: 
   focusCost: -2
   energyCost: 0
-  difficultyLevel: 10
+  difficultyLevel: 9
   performHours: 0
   performMins: 0
   performSecs: 45
@@ -665,7 +665,7 @@ MonoBehaviour:
         roomType: 0
         classRoomSubject: 0
       minIntValue: -1
-      maxIntValue: -1
+      maxIntValue: 0
     anyCondition: 0
     conditions: []
   - skillLevelRequirement: 2
@@ -845,8 +845,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 1
-      maxIntValue: 2
+      minIntValue: 2
+      maxIntValue: 3
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -1202,7 +1202,7 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 1
+      minIntValue: 2
       maxIntValue: 4
     - activeEffectType: 4
       effectPrimaryTarget: 1
@@ -1559,8 +1559,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 1
-      maxIntValue: 6
+      minIntValue: 3
+      maxIntValue: 5
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -1916,8 +1916,8 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-      minIntValue: 1
-      maxIntValue: 8
+      minIntValue: 3
+      maxIntValue: 6
     - activeEffectType: 4
       effectPrimaryTarget: 1
       effectSecondaryTarget: 2
@@ -2549,7 +2549,7 @@ MonoBehaviour:
         roomType: 0
         classRoomSubject: 0
       minIntValue: -4
-      maxIntValue: -1
+      maxIntValue: -2
     anyCondition: 0
     conditions:
     - conditionType: 58
@@ -2824,7 +2824,7 @@ MonoBehaviour:
         roomType: 0
         classRoomSubject: 0
       minIntValue: -6
-      maxIntValue: -1
+      maxIntValue: -3
     anyCondition: 0
     conditions:
     - conditionType: 58

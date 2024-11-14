@@ -57,28 +57,17 @@ public partial struct LayOnInteractableActionSystem : ISystem {
             TargetInteractable = TargetType.TARGET_BED,
             AgentBodyLookup = bodyLookup,
             AgentLocomotionLookup = locoLookup,
-            WorldStateLookup = stateLookup,
-        }.Schedule(_startPhaseQuery, state.Dependency);
-
-        state.Dependency = JobHandle.CombineDependencies(destinationJh, state.Dependency);
-
-        JobHandle jh = new ReachedLocomotionDestinationJob(){
-            DynamicActionType = _actionType,
-            InteractableLocationComponentLookup = _locCompLookup,
-            DataStore = _dataStore,
-            Ecb = ecb,
-            FinalLocomotionState = LocomotionState.LAYING,
-            OccupyLocation = true,
+            FinalLocomotionState = LocomotionState.STANDING,
+            OccupyLocation = false,
             SelectedLookup = selCharLookup,
             InventoryTagLookup = invTagLookup,
             DoorTagLookup = doorTagLookup,
             SinkTagLookup = sinkTagLookup,
             ToiletTagLookup = toiletTagLookup,
-            TargetInteractable = TargetType.TARGET_BED,
             TransformLookup = transLookup,
             WorldStateLookup = stateLookup,
-        }.Schedule(_endPhaseQuery, destinationJh);
+        }.Schedule(_startPhaseQuery, state.Dependency);
 
-        state.Dependency = JobHandle.CombineDependencies(jh, state.Dependency);
+        state.Dependency = JobHandle.CombineDependencies(destinationJh, state.Dependency);
     }
 }
