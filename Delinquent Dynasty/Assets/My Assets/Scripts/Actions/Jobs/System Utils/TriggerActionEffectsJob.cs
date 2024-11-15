@@ -91,25 +91,28 @@ public partial struct TriggerActionEffectsJob : IJobEntity {
 
             StateChangeSpawnElements.Add(newState);
 
-            actionUtils.SetEffectsForTargets(actionData, comp.CharacterEntity, targetData, isSuccessful, ActiveEffectSpawnSpawn,
-                skillLevel);
+            actionUtils.SetEffectsForTarget(actionData, comp.CharacterEntity, targetData, isSuccessful, ActiveEffectSpawnSpawn, skillLevel);
 
             actionUtils.SetCostEffects(comp.CharacterEntity, passiveUtils, actionData, ActiveEffectSpawnSpawn);
 
             var learningTargets = new FixedList4096Bytes<Entity>();
+            
             var targetCharacter = targetData.GetTargetEntity(TargetType.TARGET_CHARACTER);
+            
             if (!actionData.HideKnowledgeFromTargets && targetCharacter != Entity.Null){
                 learningTargets.Add(targetCharacter);
             }
 
             if (actionData.HasTargetType(TargetType.TARGET_VISIBLE_CHARACTERS_IN_AREA)){
                 foreach (var visibleCharacterElement in vision){
-                    if (!visibleCharacterElement.IsHidden &&
-                        visibleCharacterElement.Distance <= actionData.MaxAreaOfEffectRange){
+                    var withinRange = !visibleCharacterElement.IsHidden &&
+                                      visibleCharacterElement.Distance <= actionData.MaxAreaOfEffectRange;
+                    if (withinRange) {
+                        
                         targetData.OverwriteSingleTarget(TargetType.TARGET_CHARACTER,
                             visibleCharacterElement.VisibleCharacter);
-                        actionUtils.SetEffectsForTargets(actionData, comp.CharacterEntity, targetData, isSuccessful,
-                            ActiveEffectSpawnSpawn, skillLevel);
+                        
+                        actionUtils.SetEffectsForTarget(actionData, comp.CharacterEntity, targetData, isSuccessful, ActiveEffectSpawnSpawn, skillLevel);
 
                         if (!actionData.HideKnowledgeFromTargets && targetCharacter != Entity.Null){
                             learningTargets.Add(visibleCharacterElement.VisibleCharacter);

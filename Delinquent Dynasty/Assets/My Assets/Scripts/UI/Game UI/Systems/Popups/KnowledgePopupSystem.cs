@@ -371,9 +371,17 @@ public partial class KnowledgePopupSystem : SystemBase {
         _headerTextStringBuilder.Append("Phone Number For " + StringUtils.GetItemTypeString(itemType) + " (" +
                                         ownerName + ")");
 
-        foreach (var phoneNumberKnowledgeElement in phoneNums){
-            var nextName = SystemAPI.GetComponent<CharacterBio>(phoneNumberKnowledgeElement.KnowingEntity).FullName;
-            _mainTextStringBuilder.Append(nextName + " | ");
+        if (!phoneNums.IsEmpty){
+            var latest = phoneNums[^1];
+            var kSource = latest.Timestamp.Source;
+            if (kSource != Entity.Null && SystemAPI.GetComponentLookup<CharacterBio>().TryGetComponent(kSource, out CharacterBio bio)){
+                _mainTextStringBuilder.Append( " Latest By " + bio.FullName + " ");
+            }
+            else{
+                _mainTextStringBuilder.Append( " Latest By Unknown ");
+            }
+
+            _mainTextStringBuilder.Append(TimeUtils.GetGameDateString(latest.Timestamp));
         }
 
         return new BasicKnowledgeElementUI(){
@@ -404,9 +412,17 @@ public partial class KnowledgePopupSystem : SystemBase {
             _headerTextStringBuilder.Append("Food Bar");
         }
 
-        foreach (var sa in securityAccess){
-            var nextName = SystemAPI.GetComponent<CharacterBio>(sa.KnowingEntity).FullName;
-            _mainTextStringBuilder.Append(nextName + " | ");
+        if (!securityAccess.IsEmpty){
+            var latest = securityAccess[^1];
+            var kSource = latest.Timestamp.Source;
+            if (kSource != Entity.Null && SystemAPI.GetComponentLookup<CharacterBio>().TryGetComponent(kSource, out CharacterBio bio)){
+                _mainTextStringBuilder.Append( " Latest By " + bio.FullName + " ");
+            }
+            else{
+                _mainTextStringBuilder.Append( " Latest By Unknown ");
+            }
+
+            _mainTextStringBuilder.Append(TimeUtils.GetGameDateString(latest.Timestamp));
         }
 
         return new BasicKnowledgeElementUI(){

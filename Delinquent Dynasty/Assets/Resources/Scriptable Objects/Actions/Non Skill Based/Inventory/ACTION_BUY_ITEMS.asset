@@ -23,7 +23,7 @@ MonoBehaviour:
     MiscActionType: 0
   actionSprite: {fileID: 21300000, guid: 690c49495d236d049b53dd1ad8c17743, type: 3}
   targetTypes: 010000000400000002000000
-  skillUsed: 0
+  skillUsed: 34
   quickActionCategory: 0
   usesLocomotion: 0
   usesInfluence: 0
@@ -36,10 +36,10 @@ MonoBehaviour:
     primaryNumberValue: 0
     secondaryNumberValue: 0
     numericComparisonSign: 0
-    aliasValue: 
-    checkHasAlias: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
       classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -130,10 +131,10 @@ MonoBehaviour:
     primaryNumberValue: 0
     secondaryNumberValue: 0
     numericComparisonSign: 0
-    aliasValue: 
-    checkHasAlias: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -176,6 +177,7 @@ MonoBehaviour:
       classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0

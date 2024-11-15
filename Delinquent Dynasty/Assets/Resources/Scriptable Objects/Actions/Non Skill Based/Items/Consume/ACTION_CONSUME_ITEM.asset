@@ -23,7 +23,7 @@ MonoBehaviour:
     MiscActionType: 0
   actionSprite: {fileID: 21300000, guid: 3d43818e3e3f0824d9077b9923067723, type: 3}
   targetTypes: 0300000005000000
-  skillUsed: 0
+  skillUsed: 34
   quickActionCategory: 3
   usesLocomotion: 0
   usesInfluence: 0

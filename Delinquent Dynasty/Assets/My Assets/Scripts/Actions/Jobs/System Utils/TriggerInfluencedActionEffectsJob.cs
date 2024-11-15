@@ -54,9 +54,6 @@ public partial struct TriggerInfluencedActionEffectsJob : IJobEntity {
             targetsData.SetTargets(comp.CharacterEntity, activeTargets);
             var targetCharacter = targetsData.GetTargetEntity(TargetType.TARGET_CHARACTER);
 
-            actionUtils.ParseMainEnumTargets(activeTargets, out DynamicGameEnum primaryGameEnum,
-                out DynamicGameEnum secondaryGameEnum, out DynamicGameEnum tertiaryGameEnum);
-
             var isSuccessful = false;
 
             if (targetCharacter != Entity.Null){
@@ -72,8 +69,7 @@ public partial struct TriggerInfluencedActionEffectsJob : IJobEntity {
                 isSuccessful = RandomComponent.ValueRW.IsSuccessful(chance);
 
                 var skillLevel = passiveUtils.GetNaturalAndBonusSkillLevel(actionData.SkillUsed);
-                actionUtils.SetEffectsForTarget(actionData, comp.CharacterEntity, targetsData, isSuccessful, ActiveEffectSpawnSpawn,
-                    primaryGameEnum, secondaryGameEnum, tertiaryGameEnum, skillLevel);
+                actionUtils.SetEffectsForTarget(actionData, comp.CharacterEntity, targetsData, isSuccessful, ActiveEffectSpawnSpawn, skillLevel);
             }
 
             actionUtils.SetCostEffects(comp.CharacterEntity, passiveUtils, actionData, ActiveEffectSpawnSpawn);

@@ -23,7 +23,7 @@ MonoBehaviour:
     MiscActionType: 0
   actionSprite: {fileID: 0}
   targetTypes: 0a000000
-  skillUsed: 0
+  skillUsed: 34
   quickActionCategory: 5
   usesLocomotion: 1
   usesInfluence: 0
@@ -39,6 +39,7 @@ MonoBehaviour:
     primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -81,6 +82,7 @@ MonoBehaviour:
       classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0

@@ -23,9 +23,10 @@ MonoBehaviour:
     MiscActionType: 0
   actionSprite: {fileID: 21300000, guid: 15ae11cbed0831f49a1fb0f33b84580c, type: 3}
   targetTypes: 030000001b0000000c000000
-  skillUsed: 0
+  skillUsed: 34
   quickActionCategory: 0
-  usesCommonActionSystems: 0
+  usesLocomotion: 0
+  usesInfluence: 0
   prerequisites: []
   functions: 020000000500000003000000
   genericDescription: 
@@ -34,11 +35,10 @@ MonoBehaviour:
   focusCost: 0
   energyCost: 0
   difficultyLevel: 0
-  baseAwareness: 0
-  baseDetection: 0
   performHours: 0
   performMins: 1
   performSecs: 0
+  hideKnowledgeFromTargets: 0
   MaxAreaOfEffectRange: 0
   successEffects: []
   failEffects: []

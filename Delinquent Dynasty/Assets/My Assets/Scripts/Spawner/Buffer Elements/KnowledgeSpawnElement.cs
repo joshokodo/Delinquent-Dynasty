@@ -26,4 +26,12 @@ public struct KnowledgeSpawnElement : IBufferElementData {
         LearningEntity = learning;
         return this;
     }
+
+    public KnowledgeSpawnElement AsPhoneNumber(Entity learning, Entity phone, Entity source){
+        PrimaryTarget = phone;
+        KnowledgeType = KnowledgeType.PHONE_NUMBER;
+        LearningEntity = learning;
+        Source = source;
+        return this;
+    }
 }

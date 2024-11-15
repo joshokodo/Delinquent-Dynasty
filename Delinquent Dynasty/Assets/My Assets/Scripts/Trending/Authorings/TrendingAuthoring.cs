@@ -152,7 +152,7 @@ public class TrendingBaker : Baker<TrendingAuthoring> {
 
         var skillTypes = CommonUtils.GetValues<SkillType>();
         foreach (var value in skillTypes){
-            if (value == SkillType.COMMON){
+            if (value == SkillType.NONE || value == SkillType.COMMON){
                 continue;
             }
 

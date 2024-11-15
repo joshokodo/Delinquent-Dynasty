@@ -4,6 +4,10 @@ using Unity.Collections;
 public struct TimeUtils {
     private static FixedString64Bytes dateFormat = new("Day {0} of {1}, Year {2}");
 
+    public static FixedString128Bytes GetGameDateString(KnowledgeTimestamp timestamp){
+        return GetGameDateString(timestamp.Day, timestamp.SeasonState, timestamp.Year);
+    }
+    
     public static FixedString128Bytes GetGameDateString(int days, TimeSeasonState seasonState, int years){
         return new FixedString128Bytes(string.Format(dateFormat.Value, (days + 1).ToString(), seasonState.ToString(),
             years));

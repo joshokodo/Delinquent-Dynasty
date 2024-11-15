@@ -23,7 +23,7 @@ MonoBehaviour:
     MiscActionType: 0
   actionSprite: {fileID: 21300000, guid: 65b7810e4a4ce8c4a97b9e2c09faf23a, type: 3}
   targetTypes: 02000000
-  skillUsed: 0
+  skillUsed: 34
   quickActionCategory: 2
   usesLocomotion: 0
   usesInfluence: 1
@@ -51,6 +51,7 @@ MonoBehaviour:
       originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -93,6 +94,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -135,6 +137,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -178,6 +181,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0

@@ -158,6 +158,16 @@ public struct TargetsGroup {
 
         return targets;
     }
+    
+    public DynamicGameEnum GetTargetEnum(TargetType type){
+        foreach (var targ in Targets){
+            if (targ.TargetType == type){
+                return targ.EnumValue;
+            }
+        }
+
+        return default;
+    }
 }
 
 public struct TargetsGroupData {

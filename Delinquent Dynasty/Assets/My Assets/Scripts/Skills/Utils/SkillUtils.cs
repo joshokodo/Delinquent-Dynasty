@@ -8,7 +8,7 @@ public struct SkillUtils : FunctionalStruct {
     public SkillDataStore SkillDataStore;
 
     public void AddSkill(DynamicBuffer<SkillElement> skills, SkillType skill, int initialLevel, int initialXp){
-        if (skill == SkillType.COMMON){
+        if (skill == SkillType.NONE || skill == SkillType.COMMON){
             return;
         }
 
