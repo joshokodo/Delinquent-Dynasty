@@ -12,4 +12,7 @@
     FRIDGE,
     FOOD_BAR,
     TRASH_CAN,
+    CHARACTER,
+    CAFE_SEAT,
+    DROPPED_LOOT
 }

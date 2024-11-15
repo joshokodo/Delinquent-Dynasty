@@ -38,9 +38,6 @@ public partial struct LayOnInteractableActionSystem : ISystem {
         //TODO: update to private fields and .update(ref state)
         var selCharLookup = SystemAPI.GetComponentLookup<SelectedCharacter>();
         var invTagLookup = SystemAPI.GetComponentLookup<InteractableInventoryComponent>();
-        var doorTagLookup = SystemAPI.GetComponentLookup<DoorTag>();
-        var sinkTagLookup = SystemAPI.GetComponentLookup<SinkTag>();
-        var toiletTagLookup = SystemAPI.GetComponentLookup<ToiletTag>();
         var bodyLookup = SystemAPI.GetComponentLookup<AgentBody>();
         var locoLookup = SystemAPI.GetComponentLookup<AgentLocomotion>();
         var stateLookup = SystemAPI.GetComponentLookup<CharacterWorldStateComponent>();
@@ -54,16 +51,12 @@ public partial struct LayOnInteractableActionSystem : ISystem {
             DataStore = _dataStore,
             Ecb = ecb,
             GoToOccupyingPoint = true,
-            TargetInteractable = TargetType.TARGET_BED,
             AgentBodyLookup = bodyLookup,
             AgentLocomotionLookup = locoLookup,
             FinalLocomotionState = LocomotionState.STANDING,
             OccupyLocation = false,
             SelectedLookup = selCharLookup,
             InventoryTagLookup = invTagLookup,
-            DoorTagLookup = doorTagLookup,
-            SinkTagLookup = sinkTagLookup,
-            ToiletTagLookup = toiletTagLookup,
             TransformLookup = transLookup,
             WorldStateLookup = stateLookup,
         }.Schedule(_startPhaseQuery, state.Dependency);

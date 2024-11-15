@@ -38,14 +38,14 @@ MonoBehaviour:
   initialWisdom: 0
   initialVitality: 0
   initialCharisma: 10
-  initialPhysicalHealth: 500
-  initialMentalHealth: 500
-  initialEnergy: 500
-  initialFocus: 500
-  initialNurishment: 500
-  initialHappiness: 500
-  initialSleep: 500
-  initialHygiene: 500
+  initialPhysicalHealth: 200
+  initialMentalHealth: 200
+  initialEnergy: 200
+  initialFocus: 200
+  initialNurishment: 200
+  initialHappiness: 200
+  initialSleep: 200
+  initialHygiene: 200
   initItems:
   - itemType:
       clothingCategory: 0

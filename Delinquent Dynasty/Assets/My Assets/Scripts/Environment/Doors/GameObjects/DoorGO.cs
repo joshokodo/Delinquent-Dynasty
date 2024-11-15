@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class DoorGO : MonoBehaviour {
+    public string alias;
     public Transform LookPoint;
     public Entity DoorEntity;
     public ItemSpawnDTO lockItem;

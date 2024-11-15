@@ -22,7 +22,7 @@ MonoBehaviour:
     SkillBasedItemActionType: 0
     MiscActionType: 0
   actionSprite: {fileID: 0}
-  targetTypes: 06000000
+  targetTypes: 0a000000
   skillUsed: 0
   quickActionCategory: 5
   usesLocomotion: 1
@@ -36,8 +36,7 @@ MonoBehaviour:
     primaryNumberValue: 0
     secondaryNumberValue: 0
     numericComparisonSign: 0
-    aliasValue: 
-    checkHasAlias: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
       traitType:

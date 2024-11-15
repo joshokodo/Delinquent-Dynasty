@@ -106,7 +106,8 @@ public partial struct BargainSellItemsJob : IJobEntity {
         });
 
         Ecb.AddComponent(e, new InteractableLocationComponent(){
-            Location = localTransform.Position
+            Location = localTransform.Position,
+            InteractableType = InteractableType.CHARACTER
         });
 
         Ecb.AddComponent<InteractableInventoryComponent>(e);

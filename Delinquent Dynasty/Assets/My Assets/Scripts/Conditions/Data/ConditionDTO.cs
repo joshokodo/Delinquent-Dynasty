@@ -17,8 +17,7 @@ public class ConditionDTO {
     public double secondaryNumberValue;
     public NumericComparisonSign numericComparisonSign;
 
-    public string aliasValue;
-    public YesNoChoiceType checkHasAlias;
+    [FormerlySerializedAs("aliasValue")] public string primaryStringValue;
 
     // types
     [FormerlySerializedAs("genericEnumDtoType")]
@@ -38,10 +37,9 @@ public class ConditionDTO {
             SecondaryNumberValue = secondaryNumberValue,
             PrimaryEnumValue = primaryEnumValue.ToData(),
             SecondaryEnumValue = secondaryEnumValue.ToData(),
-            CheckHasAlias = checkHasAlias,
             PrimaryTarget = primaryTarget,
             SecondaryTarget = secondaryTarget,
-            AliasValue = !string.IsNullOrEmpty(aliasValue) ? new FixedString128Bytes(aliasValue) : default
+            PrimaryStringValue = !string.IsNullOrEmpty(primaryStringValue) ? new FixedString128Bytes(primaryStringValue) : default
         };
         return data;
     }

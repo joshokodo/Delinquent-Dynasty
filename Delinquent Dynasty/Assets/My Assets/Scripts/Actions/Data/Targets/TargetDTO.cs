@@ -11,9 +11,6 @@ public class TargetDTO {
     [FormerlySerializedAs("genericEnumDtoType")]
     public DynamicGameEnumDTO dynamicEnumDtoType;
 
-    public string aliasValue;
-    public YesNoChoiceType checkHasAlias;
-
 
     public TargetAssetData ToAssetData(){
         return new TargetAssetData(){
@@ -26,8 +23,6 @@ public class TargetDTO {
             TargetType = targetType,
             EnumValue = dynamicEnumDtoType.ToData(),
             CountValue = intValue,
-            AliasValue = new FixedString128Bytes(aliasValue),
-            CheckHasAlias = checkHasAlias
         };
     }
 }

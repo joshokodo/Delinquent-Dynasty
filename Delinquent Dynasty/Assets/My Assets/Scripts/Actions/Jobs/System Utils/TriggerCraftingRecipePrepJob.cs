@@ -119,7 +119,7 @@ public struct TriggerCraftingRecipePrepUtil {
 
         Query =
             state.GetEntityQuery(
-                CommonSystemUtils.BuildCommonActionTargetsComponentConditionsFunctionPerformQuery<T>());
+                CommonSystemUtils.BuildCommonActionTargetsComponentFunctionPerformQuery<T>());
 
         _itemStackLookup = state.GetComponentLookup<ItemStackComponent>();
         _ingredientLookup = state.GetComponentLookup<ItemCraftingIngredientComponent>();

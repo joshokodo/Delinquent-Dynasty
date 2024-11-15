@@ -8,8 +8,7 @@ public struct XHasAnyItemWithPropertyConditionLogic : IConditionCheck {
             foreach (var itemElement in inventory){
                 var itemType = utils.ItemBaseLookup[itemElement.ItemEntity].ItemType;
                 if (utils.ItemDataStore.ItemBlobAssets.Value.HasItemProperty(itemType,
-                        conditionData.PrimaryEnumValue.ItemProperty)
-                    && utils.MeetsAliasCheck(target, itemElement.ItemEntity, conditionData)){
+                        conditionData.PrimaryEnumValue.ItemProperty)){
                     hasItem = true;
                     break;
                 }

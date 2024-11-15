@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 
 public struct SelectedCharacter : IComponentData {
-    public bool IsPlayerControlled;
+    // public bool IsPlayerControlled;
     public Entity SecondarySelected;
     public bool UpdateSecondarySelectedUI;
 

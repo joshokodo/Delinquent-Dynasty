@@ -11,6 +11,4 @@ public struct TargetData {
     public int CountValue;
     public int SellValue;
     public DynamicGameEnum EnumValue;
-    public FixedString128Bytes AliasValue;
-    public YesNoChoiceType CheckHasAlias;
 }

@@ -8,8 +8,6 @@ public class GenericTargetDTO {
     public TargetType targetType;
     public int intValue;
     public DynamicGameEnumDTO dynamicEnumDtoType;
-    public string aliasValue;
-    public YesNoChoiceType checkHasAlias;
 
     public bool anyCondition;
     public List<ConditionDTO> genericTargetConditions;
@@ -30,8 +28,6 @@ public class GenericTargetDTO {
             CountValue = intValue,
             FindGenericTarget = true,
             AnyCondition = anyCondition,
-            AliasValue = new FixedString128Bytes(aliasValue),
-            CheckHasAlias = checkHasAlias
         };
     }
 }

@@ -18,22 +18,24 @@ MonoBehaviour:
   lastName: 
   isFemale: 0
   seniorityType: 0
-  characterType: 1
+  characterType: 4
   initTraits: []
-  initSkills: 0100000003000000
+  initSkills:
+  - SkillType: 20
+    InitialLevel: 5
   initialStrength: 0
   initialDexterity: 0
   initialIntelligence: 0
   initialWisdom: 0
   initialVitality: 0
   initialCharisma: 0
-  initialPhysicalHealth: 500
-  initialMentalHealth: 500
-  initialEnergy: 500
-  initialFocus: 500
-  initialNurishment: 500
-  initialHappiness: 500
-  initialSleep: 500
-  initialHygiene: 500
+  initialPhysicalHealth: 200
+  initialMentalHealth: 200
+  initialEnergy: 200
+  initialFocus: 200
+  initialNurishment: 200
+  initialHappiness: 200
+  initialSleep: 200
+  initialHygiene: 200
   initItems: []
   initInterest: []

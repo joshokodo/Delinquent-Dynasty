@@ -49,9 +49,11 @@ public class InteractablePopup : Popup {
 
         if (positionInQueue > 0){
             QueueMessage.gameObject.SetActive(true);
+            InteractionImage.gameObject.SetActive(false);
             QueueMessage.text = "IN QUEUE \n" + (positionInQueue + 1);
         }
         else{
+            InteractionImage.gameObject.SetActive(true);
             QueueMessage.gameObject.SetActive(false);
         }
     }

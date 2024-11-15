@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac3c2cab0554195a6208dd5eb89eb22, type: 3}
   m_Name: CRAFTING_RECIPE_FRIED_EGG
   m_EditorClassIdentifier: 
-  requiredSkillType: 19
+  requiredSkillType: 20
   requiredSkillLevel: 1
   requiredLocationType: 0
   prepTimeHours: 0
@@ -109,13 +109,14 @@ MonoBehaviour:
       effectPrimaryTarget: 1
       effectSecondaryTarget: 0
       displayToWorld: 0
+      originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -129,7 +130,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 2
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -147,14 +149,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -168,7 +172,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -186,14 +191,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -207,7 +214,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -225,7 +233,9 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
@@ -233,7 +243,7 @@ MonoBehaviour:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -247,7 +257,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -265,9 +276,12 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       minIntValue: 5
       maxIntValue: 5
+    anyCondition: 0
     conditions: []
   - qualityType: 2
     effects:
@@ -275,13 +289,14 @@ MonoBehaviour:
       effectPrimaryTarget: 1
       effectSecondaryTarget: 0
       displayToWorld: 0
+      originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -295,7 +310,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 2
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -313,14 +329,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -334,7 +352,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -352,14 +371,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -373,7 +394,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -391,7 +413,9 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
@@ -399,7 +423,7 @@ MonoBehaviour:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -413,7 +437,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -431,9 +456,12 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       minIntValue: 10
       maxIntValue: 10
+    anyCondition: 0
     conditions: []
   - qualityType: 3
     effects:
@@ -441,13 +469,14 @@ MonoBehaviour:
       effectPrimaryTarget: 1
       effectSecondaryTarget: 0
       displayToWorld: 0
+      originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -461,7 +490,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 2
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -479,14 +509,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -500,7 +532,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -518,14 +551,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -539,7 +574,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -557,7 +593,9 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
@@ -565,7 +603,7 @@ MonoBehaviour:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -579,7 +617,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -597,9 +636,12 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       minIntValue: 15
       maxIntValue: 15
+    anyCondition: 0
     conditions: []
   - qualityType: 4
     effects:
@@ -607,13 +649,14 @@ MonoBehaviour:
       effectPrimaryTarget: 1
       effectSecondaryTarget: 0
       displayToWorld: 0
+      originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -627,7 +670,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 2
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -645,14 +689,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -666,7 +712,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -684,14 +731,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -705,7 +754,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -723,7 +773,9 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
@@ -731,7 +783,7 @@ MonoBehaviour:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -745,7 +797,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -763,9 +816,12 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       minIntValue: 20
       maxIntValue: 20
+    anyCondition: 0
     conditions: []
   - qualityType: 5
     effects:
@@ -773,13 +829,14 @@ MonoBehaviour:
       effectPrimaryTarget: 1
       effectSecondaryTarget: 0
       displayToWorld: 0
+      originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -793,7 +850,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 2
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -811,14 +869,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -832,7 +892,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -850,14 +911,16 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -871,7 +934,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -889,7 +953,9 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
@@ -897,7 +963,7 @@ MonoBehaviour:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -911,7 +977,8 @@ MonoBehaviour:
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -929,8 +996,11 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
+        roomType: 0
+        classRoomSubject: 0
       minIntValue: 25
       maxIntValue: 25
+    anyCondition: 0
     conditions: []
   passiveEffects: []

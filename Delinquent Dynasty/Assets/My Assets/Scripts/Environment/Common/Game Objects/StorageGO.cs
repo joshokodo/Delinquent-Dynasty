@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 public class StorageGO : MonoBehaviour, IPooledObject {
+    public string alias;
     public Entity entity;
     public Transform viewPoint;
 

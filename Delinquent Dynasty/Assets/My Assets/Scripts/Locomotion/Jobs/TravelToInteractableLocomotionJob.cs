@@ -10,18 +10,15 @@ public partial struct TravelToInteractableLocomotionJob : IJobEntity {
     public DynamicActionType DynamicActionType;
     public EntityCommandBuffer Ecb;
     public bool GoToOccupyingPoint;
-    public TargetType TargetInteractable;
 
     [ReadOnly] public ActionDataStore DataStore;
     [ReadOnly] public ComponentLookup<InteractableLocationComponent> InteractableLocationComponentLookup;
     public ComponentLookup<CharacterWorldStateComponent> WorldStateLookup;
     public ComponentLookup<AgentBody> AgentBodyLookup;
     public ComponentLookup<AgentLocomotion> AgentLocomotionLookup;
+    // public ComponentLookup<NavMeshPath> PathLookup;
 
     [ReadOnly] public ComponentLookup<InteractableInventoryComponent> InventoryTagLookup;
-    [ReadOnly] public ComponentLookup<DoorTag> DoorTagLookup;
-    [ReadOnly] public ComponentLookup<SinkTag> SinkTagLookup;
-    [ReadOnly] public ComponentLookup<ToiletTag> ToiletTagLookup;
 
     [ReadOnly] public ComponentLookup<SelectedCharacter> SelectedLookup;
     public ComponentLookup<LocalTransform> TransformLookup;
@@ -39,7 +36,7 @@ public partial struct TravelToInteractableLocomotionJob : IJobEntity {
 
         if (actionUtils.TryGetActiveActionAndTargets(DynamicActionType, actions, targets, out ActiveActionElement act,
                 out FixedList4096Bytes<ActiveActionTargetElement> activeTargets, out int index)){
-            if (actionUtils.TryGetTargetInteractableEntity(TargetInteractable, activeTargets,
+            if (actionUtils.TryGetTargetInteractableEntity(TargetType.TARGET_INTERACTABLE, activeTargets,
                     out Entity interactablelocationEntity)){
                 var interactableLocationComponent = InteractableLocationComponentLookup[interactablelocationEntity];
                 var loc = GoToOccupyingPoint
@@ -48,8 +45,8 @@ public partial struct TravelToInteractableLocomotionJob : IJobEntity {
 
                 var body = AgentBodyLookup[comp.CharacterEntity];
                 var loco = AgentLocomotionLookup[comp.CharacterEntity];
+                // var path = PathLookup[comp.CharacterEntity];
                 var worldState = WorldStateLookup[comp.CharacterEntity];
-
 
                 var hasStarted = trip.StartLocomotion(act, actions, index, loc, 0.5f, body, loco, worldState, Ecb,
                     comp.CharacterEntity);
@@ -58,25 +55,30 @@ public partial struct TravelToInteractableLocomotionJob : IJobEntity {
                     return;
                 }
 
-                if (trip.HasReachedDestination(body, 0.5f) && trip.HasReachedEndOfPath(body, 0.5f)){
-                    if (interactableLocationComponent.IsInInteractingQueue(comp.CharacterEntity, out bool isInFront)){
+                if (trip.HasReachedEndOfPath(body, 0.5f)){
+                    if (interactableLocationComponent.IsInInteractingQueue(comp.CharacterEntity, out bool isInFront, out int queueIndex)){
                         if (isInFront){
-                        
-                            worldState.LocomotionState = FinalLocomotionState;
-                            worldState.InteractableEntity = interactablelocationEntity;
 
-                            Ecb.SetComponent(comp.CharacterEntity, worldState);
+                            if (worldState.LocomotionState != FinalLocomotionState ||
+                                worldState.InteractableEntity != interactablelocationEntity || worldState.PositionInQueue != queueIndex){
+                                worldState.LocomotionState = FinalLocomotionState;
+                                worldState.InteractableEntity = interactablelocationEntity;
+                                worldState.PositionInQueue = queueIndex;
+                                Ecb.SetComponent(comp.CharacterEntity, worldState);
+                            }
+           
 
                             if (OccupyLocation){
                                 var transform = TransformLookup[comp.CharacterEntity];
-                                transform.Position = interactableLocationComponent.OccupyingPosition;
-                                transform.Rotation = interactableLocationComponent.OccupyingRotation;
-                                Ecb.SetComponent(comp.CharacterEntity, transform);
+                                if (!transform.Position.Equals(interactableLocationComponent.OccupyingPosition)
+                                    || !transform.Rotation.Equals(interactableLocationComponent.OccupyingRotation)){
+                                    transform.Position = interactableLocationComponent.OccupyingPosition;
+                                    transform.Rotation = interactableLocationComponent.OccupyingRotation;
+                                    Ecb.SetComponent(comp.CharacterEntity, transform);
+                                }
+                           
                             }
 
-                            Ecb.SetComponent(interactablelocationEntity, interactableLocationComponent);
-
-                            // todo replace with stateChangeSpawnElement and do this logic there
                             if (SelectedLookup.TryGetComponent(comp.CharacterEntity, out SelectedCharacter tag)){
                                 if (InventoryTagLookup.HasComponent(interactablelocationEntity) &&
                                     !tag.ShowInventoryUI){
@@ -84,27 +86,64 @@ public partial struct TravelToInteractableLocomotionJob : IJobEntity {
                                     Ecb.SetComponent(comp.CharacterEntity, tag);
                                 }
                                 else if (!tag.ShowInteractableUI){
-                                    if (DoorTagLookup.HasComponent(interactablelocationEntity)){
-                                        tag.ShowInteractableUI = true;
-                                        tag.InteractableTypeUI = InteractableType.DOOR;
+                                    switch (interactableLocationComponent.InteractableType){
+                                        case InteractableType.DOOR:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.DOOR;
+                                            break;
+                                        
+                                        case InteractableType.SINK:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.SINK;
+                                            break;
+                                        
+                                        case InteractableType.TOILET:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.TOILET;
+                                            break;
                                     }
-                                    else if (SinkTagLookup.HasComponent(interactablelocationEntity)){
-                                        tag.ShowInteractableUI = true;
-                                        tag.InteractableTypeUI = InteractableType.SINK;
-                                    }
-                                    else if (ToiletTagLookup.HasComponent(interactablelocationEntity)){
-                                        tag.ShowInteractableUI = true;
-                                        tag.InteractableTypeUI = InteractableType.TOILET;
-                                    }
-
+                                  
                                     Ecb.SetComponent(comp.CharacterEntity, tag);
                                 }
                             }
                             
-                            actionUtils.StartPhase(DynamicActionType, Ecb, e, 1);
                         }
                         else{
-                            // chillin
+                            if (worldState.LocomotionState != FinalLocomotionState ||
+                                worldState.InteractableEntity != interactablelocationEntity || worldState.PositionInQueue != queueIndex){
+                                worldState.LocomotionState = FinalLocomotionState;
+                                worldState.InteractableEntity = interactablelocationEntity;
+                                worldState.PositionInQueue = queueIndex;
+                                Ecb.SetComponent(comp.CharacterEntity, worldState);
+                            }
+
+                            if (SelectedLookup.TryGetComponent(comp.CharacterEntity, out SelectedCharacter tag)){
+
+                                if (InventoryTagLookup.HasComponent(interactablelocationEntity) &&
+                                    !tag.ShowInventoryUI){
+                                    tag.ShowInventoryUI = true;
+                                    Ecb.SetComponent(comp.CharacterEntity, tag);
+                                }
+                                else if (!tag.ShowInteractableUI){
+                                    switch (interactableLocationComponent.InteractableType){
+                                        case InteractableType.DOOR:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.DOOR;
+                                            break;
+                                        
+                                        case InteractableType.SINK:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.SINK;
+                                            break;
+                                        
+                                        case InteractableType.TOILET:
+                                            tag.ShowInteractableUI = true;
+                                            tag.InteractableTypeUI = InteractableType.TOILET;
+                                            break;
+                                    }
+                                    Ecb.SetComponent(comp.CharacterEntity, tag);
+                                } 
+                            }
                         }
                     }
                     else{

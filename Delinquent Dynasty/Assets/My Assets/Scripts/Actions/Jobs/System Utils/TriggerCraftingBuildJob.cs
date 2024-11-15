@@ -14,6 +14,7 @@ public partial struct TriggerCraftingBuildJob : IJobEntity {
     [ReadOnly] public ComponentLookup<PassiveEffectComponent> PassiveCompLookup;
     [ReadOnly] public BufferLookup<SkillElement> SkillsLookup;
     [ReadOnly] public BufferLookup<PassiveEffectElement> PassiveLookup;
+    [ReadOnly] public BufferLookup<CharacterAttributeElement> AttributesLookup;
 
     [NativeDisableUnsafePtrRestriction] public RefRW<RandomComponent> Random;
 
@@ -41,6 +42,7 @@ public partial struct TriggerCraftingBuildJob : IJobEntity {
             PassiveCompLookup = PassiveCompLookup,
             SkillUtils = skillUtils,
             Skills = SkillsLookup[comp.CharacterEntity],
+            CharacterAttributes = AttributesLookup[comp.CharacterEntity]
         };
 
         if (actionUtils.TryGetActiveActionAndTargets(DynamicActionType, actions, targets, out ActiveActionElement act,
@@ -140,6 +142,7 @@ public struct TriggerCraftingBuildUtil {
     private ComponentLookup<ItemBuildInProgressComponent> _itemBuildInProgressLookup;
     private BufferLookup<PassiveEffectElement> _passivesLookup;
     private BufferLookup<SkillElement> _skillsLookup;
+    private BufferLookup<CharacterAttributeElement> _attributesLookup;
 
 
     private ComponentLookup<ItemDurabilityComponent> _durabilityLookup;
@@ -154,6 +157,7 @@ public struct TriggerCraftingBuildUtil {
         _passiveCompLookup = state.GetComponentLookup<PassiveEffectComponent>();
         _passivesLookup = state.GetBufferLookup<PassiveEffectElement>();
         _skillsLookup = state.GetBufferLookup<SkillElement>();
+        _attributesLookup = state.GetBufferLookup<CharacterAttributeElement>();
 
         _durabilityLookup = state.GetComponentLookup<ItemDurabilityComponent>();
 
@@ -167,6 +171,7 @@ public struct TriggerCraftingBuildUtil {
         _passivesLookup.Update(ref state);
         _skillsLookup.Update(ref state);
         _durabilityLookup.Update(ref state);
+        _attributesLookup.Update(ref state);
     }
 
     public TriggerCraftingBuildJob GetTriggerCraftingBuildJob(int nextPhase){
@@ -184,7 +189,8 @@ public struct TriggerCraftingBuildUtil {
             BuildInProgressLookup = _itemBuildInProgressLookup,
             Random = Random,
             DurablitiyLookup = _durabilityLookup,
-            StateChangeSpawnElements = StateChangeSpawnElements
+            StateChangeSpawnElements = StateChangeSpawnElements,
+            AttributesLookup = _attributesLookup
         };
     }
 }
