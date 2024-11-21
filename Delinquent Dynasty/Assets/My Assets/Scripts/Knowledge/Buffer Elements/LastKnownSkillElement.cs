@@ -4,5 +4,5 @@
 public struct LastKnownSkillElement : IBufferElementData {
     public SkillType SkillType;
     public int Value;
-    public KnowledgeTimestamp Timestamp;
+    public EventTimestamp Timestamp;
 }

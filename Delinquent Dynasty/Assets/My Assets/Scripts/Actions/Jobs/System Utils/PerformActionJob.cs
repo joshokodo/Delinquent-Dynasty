@@ -8,6 +8,7 @@ using Unity.Entities;
 using UnityEngine;
 
 [BurstCompile]
+// TODO: important!!!!!!!! bulk of action time takes place here. making this parallel should improve performance greatly!!
 public partial struct PerformActionJob : IJobEntity {
     [ReadOnly] public DynamicActionType DynamicActionType;
     [ReadOnly] public double TotalInGameSeconds;
@@ -34,9 +35,10 @@ public partial struct PerformActionJob : IJobEntity {
             PassiveCompLookup = PassiveCompLookup,
             Skills = SkillsLookup[comp.CharacterEntity]
         };
-        
+
         if (actionUtils.TryGetActiveActionAndTargetEntity(DynamicActionType, actions, targets,
                 TargetType.TARGET_CHARACTER, out ActiveActionElement activeAction, out Entity target, out int index)){
+         
             var actData = ActionDataStore.ActionsBlobAssets.Value.GetActionBaseData(DynamicActionType);
             var performTime = passiveEffectsUtils.GetNaturalAndBonusPerformTime(actData.PerformTime,
                 actData.SkillUsed);

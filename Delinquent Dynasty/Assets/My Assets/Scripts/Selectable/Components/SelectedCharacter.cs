@@ -42,4 +42,14 @@ public struct SelectedCharacter : IComponentData {
     public bool ShowInteractableUI;
     public bool UpdateInteractableUI;
     public InteractableType InteractableTypeUI;
+    
+    // notify
+    public bool TriggerNotifySkillLearned;
+    public bool TriggerNotifySkillLeveledUp;
+    public bool TriggerNotifyAttributeLeveledUp;
+    public SkillType NotifySkillLearned;
+    public SkillType NotifySkillLeveledUp;
+    public AttributeType NotifyAttributeLeveledUp;
+    public bool TriggerNotifyRecievedText;
+    public Entity RecievedTextFrom;
 }

@@ -10,13 +10,21 @@ public struct AffectSkillXpOfXLogic : IApplyActiveEffect {
     public DynamicBuffer<DisplayDamageSpawnElement> DisplayDamageSpawn;
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
+        primaryStateChange = default;
+        secondaryStateChange = default;
         var number =
             PrimaryPassiveUtils.OnAffectSkillXp(data, nextIntValue, sourceEntity, primaryTarget, ActiveEffectsSpawn);
 
         var resultingSkillLevel = SkillUtils.AddXp(number,
-            data.PrimaryEnumValue.SkillType, Skills);
+            data.PrimaryEnumValue.SkillType, Skills, out bool leveledUp);
+        
+        primaryStateChange.SkillsChanged = true;
+        if (leveledUp){
+            primaryStateChange.SkillTypeLeveledUp = data.PrimaryEnumValue.SkillType;
+            primaryStateChange.SkillHasLeveledUp = true;
+        }
 
         // if (Display){
         //     DisplayDamageSpawn.Add(new DisplayDamageSpawnElement(){

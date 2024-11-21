@@ -24,7 +24,7 @@ MonoBehaviour:
   actionSprite: {fileID: 21300000, guid: 1fb187d626cc4824a9765f245e10b859, type: 3}
   targetTypes: 030000001000000004000000
   skillUsed: 34
-  quickActionCategory: 3
+  quickActionCategory: 12
   usesLocomotion: 0
   usesInfluence: 0
   prerequisites:

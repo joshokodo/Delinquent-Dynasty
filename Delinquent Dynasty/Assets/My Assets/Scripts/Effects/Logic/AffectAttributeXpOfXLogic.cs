@@ -8,8 +8,11 @@ public struct AffectAttributeXpOfXLogic : IApplyActiveEffect {
     public DynamicBuffer<ActiveEffectSpawnElement> ActiveEffectsSpawn;
     public DynamicBuffer<DisplayDamageSpawnElement> DisplayDamageSpawn;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
         var number =
             PrimaryPassivesUtil.OnAffectAttributeXp(data, nextIntValue, sourceEntity, primaryTarget,
                 ActiveEffectsSpawn);
@@ -18,6 +21,11 @@ public struct AffectAttributeXpOfXLogic : IApplyActiveEffect {
         };
 
         var result = attributesUtils.AddXp(number, data.PrimaryEnumValue.AttributeType);
+        primaryStateChange.AttributesChanged = true;
+        if (result){
+            primaryStateChange.AttributeTypeLeveledUp = data.PrimaryEnumValue.AttributeType;
+            primaryStateChange.AttributeHasLeveledUp = true;
+        }
 
         // if (Display){
         //     DisplayDamageSpawn.Add(new DisplayDamageSpawnElement(){

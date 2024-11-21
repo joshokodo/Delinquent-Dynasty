@@ -27,9 +27,9 @@ MonoBehaviour:
     statusCategory: 0
   initSkills:
   - SkillType: 29
-    InitialLevel: 5
+    InitialLevel: 1
   - SkillType: 2
-    InitialLevel: 5
+    InitialLevel: 1
   - SkillType: 20
     InitialLevel: 5
   initialStrength: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
   initialIntelligence: 0
   initialWisdom: 0
   initialVitality: 0
-  initialCharisma: 10
+  initialCharisma: 0
   initialPhysicalHealth: 200
   initialMentalHealth: 200
   initialEnergy: 200
@@ -114,21 +114,6 @@ MonoBehaviour:
       bookCategory: 0
       securityCategory: 0
       foodCategory: 0
-      techCategory: 1
-      practicalUseCategory: 0
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: 
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
       techCategory: 0
       practicalUseCategory: 0
       miscCategory: 0
@@ -159,267 +144,12 @@ MonoBehaviour:
       bookCategory: 0
       securityCategory: 0
       foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 0
-      techCategory: 0
-      practicalUseCategory: 2
-      miscCategory: 0
-      currencyCategory: 0
-    count: 1
-    onSpawnTrigger: 0
-    alias: P1
-    itemTargetBool: 0
-  - itemType:
-      clothingCategory: 0
-      meleeCategory: 0
-      rangedCategory: 0
-      bookCategory: 0
-      securityCategory: 0
-      foodCategory: 49
-      techCategory: 0
+      techCategory: 1
       practicalUseCategory: 0
       miscCategory: 0
       currencyCategory: 0
     count: 1
     onSpawnTrigger: 0
-    alias: Eggy
+    alias: 
     itemTargetBool: 0
   initInterest: []

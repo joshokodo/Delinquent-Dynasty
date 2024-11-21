@@ -15,13 +15,18 @@ public struct InclusivelyAffectWellnessOfXAndYLogic : IApplyActiveEffect {
     public DynamicBuffer<DisplayDamageSpawnElement> DisplayDamageSpawn;
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
         var number = nextIntValue;
         var isDamage = number < 0;
         var isRestore = number > 0;
 
-
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
+        primaryStateChange.WellnessChanged = true;
+        secondaryStateChange.WellnessChanged = true;
+        
         number = PrimaryPassivesUtil.OnAffectOtherWellness(data, data.PrimaryEnumValue.WellnessType, number,
             primaryTarget, secondaryTarget, ActiveEffectsSpawn);
 

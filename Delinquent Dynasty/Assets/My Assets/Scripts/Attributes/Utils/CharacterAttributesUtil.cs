@@ -109,18 +109,20 @@ public struct CharacterAttributesUtil {
         return (float) attribute.CurrentExp / nextLvl;
     }
 
-    public CharacterAttributeElement AddXp(int effectValue, AttributeType attributeType){
+    public bool AddXp(int effectValue, AttributeType attributeType){
         var attribute = GetAttribute(attributeType, out int index);
         var nextLvl = GetXpToNextLevelForAttribute(attribute.Level);
         attribute.CurrentExp += effectValue;
+        var leveledUp = false;
         if (attribute.CurrentExp >= nextLvl){
             attribute.CurrentExp = 0;
             attribute.Level++;
+            leveledUp = true;
         }
 
         Attributes[index] = attribute;
 
-        return attribute;
+        return leveledUp;
     }
 
     public int GetRanking(AttributeType attributeType){

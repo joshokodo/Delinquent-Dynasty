@@ -27,15 +27,15 @@ MonoBehaviour:
     statusCategory: 0
   initSkills:
   - SkillType: 2
-    InitialLevel: 5
+    InitialLevel: 1
   - SkillType: 29
-    InitialLevel: 5
+    InitialLevel: 1
   initialStrength: 0
   initialDexterity: 0
   initialIntelligence: 0
   initialWisdom: 0
   initialVitality: 0
-  initialCharisma: 10
+  initialCharisma: 0
   initialPhysicalHealth: 200
   initialMentalHealth: 200
   initialEnergy: 200

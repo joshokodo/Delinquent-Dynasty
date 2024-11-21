@@ -16,12 +16,14 @@ public struct AffectWellnessOfX : IApplyActiveEffect {
     public DynamicBuffer<DisplayDamageSpawnElement> DisplayDamageSpawn;
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
         var number = nextIntValue;
         var isDamage = number < 0;
         var isRestore = number > 0;
-
+        
+        primaryStateChange = default;
+        secondaryStateChange = default;
 
         if (CheckSourceForPassives){
             number = SourcePassivesUtil.OnAffectOtherWellness(data,
@@ -39,6 +41,10 @@ public struct AffectWellnessOfX : IApplyActiveEffect {
         };
         var currentValue = wellnessUtils.Affect(data.PrimaryEnumValue.WellnessType, number, bonusMax);
 
+        if (number != 0){
+            primaryStateChange.WellnessChanged = true;
+        }
+        
         if (Display){
             NumberUtils.SetWellnessDisplay(number, totalBonus, isDamage, isRestore, primaryTarget, data,
                 DisplayDamageSpawn);

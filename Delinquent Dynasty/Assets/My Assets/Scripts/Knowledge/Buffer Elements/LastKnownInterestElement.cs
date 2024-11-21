@@ -5,5 +5,5 @@ public struct LastKnownInterestElement : IBufferElementData {
     public InterestSubjectType SubjectType;
     public DynamicGameEnum PrimaryEnumValue;
     public int Value;
-    public KnowledgeTimestamp Timestamp;
+    public EventTimestamp Timestamp;
 }

@@ -10,10 +10,14 @@ public struct AffectXInterestInSubjectLogic : IApplyActiveEffect {
     public DynamicBuffer<PassiveEffectSpawnElement> PassiveSpawn;
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
         var foundInterest = false;
         var value = 0;
+        
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
         for (int i = 0; i < PrimaryInterests.Length; i++){
             var element = PrimaryInterests[i];
             if (element.SubjectType == data.PrimaryEnumValue.InterestSubjectType
@@ -39,6 +43,8 @@ public struct AffectXInterestInSubjectLogic : IApplyActiveEffect {
                 .SetPassiveEffects(primaryTarget, PassiveSpawn, data.PrimaryEnumValue.InterestSubjectType,
                     data.SecondaryEnumValue);
         }
+        
+        primaryStateChange.InterestChanged = true;
 
         if (Display){
             FixedString128Bytes display = default;

@@ -5,9 +5,21 @@ public struct XLearnsSkillLogic : IApplyActiveEffect {
     [ReadOnly] public SkillUtils SkillUtils;
     public DynamicBuffer<SkillElement> Skills;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
-        SkillUtils.AddSkill(Skills, data.PrimaryEnumValue.SkillType,
+        
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
+        
+        
+        var added = SkillUtils.AddSkill(Skills, data.PrimaryEnumValue.SkillType,
             1, nextIntValue);
+
+        if (added){
+            primaryStateChange.SkillsChanged = true;
+            primaryStateChange.SkillLearned = true;
+            primaryStateChange.LearnedSkillType = data.PrimaryEnumValue.SkillType;
+        }
     }
 }

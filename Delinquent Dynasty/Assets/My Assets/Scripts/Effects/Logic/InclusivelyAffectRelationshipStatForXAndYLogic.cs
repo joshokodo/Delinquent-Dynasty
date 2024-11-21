@@ -17,12 +17,18 @@ public struct InclusivelyAffectRelationshipStatForXAndYLogic : IApplyActiveEffec
     public DynamicBuffer<PassiveEffectSpawnElement> PassivesSpawn;
     public CharactersDataStore CharacterDataStore;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
         var number = nextIntValue;
         var isGain = number > 0;
         var isLost = number < 0;
         var utils = new RelationshipUtils();
+        
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
+        primaryStateChange.RelationshipChanged = true;
+        secondaryStateChange.RelationshipChanged = true;
 
         number = PrimaryPassives.OnAffectOtherRelationshipStat(data, data.PrimaryEnumValue.RelationshipStatType, number,
             primaryTarget, secondaryTarget, ActiveEffectsSpawn);

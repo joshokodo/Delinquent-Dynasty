@@ -94,7 +94,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
-        targetType: 0
+        targetType: 18
         traitType:
           defaultCategory: 0
           geneticCategory: 0

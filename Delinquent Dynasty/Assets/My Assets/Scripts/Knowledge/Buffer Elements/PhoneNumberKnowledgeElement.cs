@@ -3,5 +3,5 @@
 [InternalBufferCapacity(0)]
 public struct PhoneNumberKnowledgeElement : IBufferElementData {
     public Entity Phone;
-    public KnowledgeTimestamp Timestamp;
+    public EventTimestamp Timestamp;
 }

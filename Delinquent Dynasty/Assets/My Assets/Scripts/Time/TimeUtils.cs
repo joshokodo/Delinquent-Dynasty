@@ -4,7 +4,7 @@ using Unity.Collections;
 public struct TimeUtils {
     private static FixedString64Bytes dateFormat = new("Day {0} of {1}, Year {2}");
 
-    public static FixedString128Bytes GetGameDateString(KnowledgeTimestamp timestamp){
+    public static FixedString128Bytes GetGameDateString(EventTimestamp timestamp){
         return GetGameDateString(timestamp.Day, timestamp.SeasonState, timestamp.Year);
     }
     

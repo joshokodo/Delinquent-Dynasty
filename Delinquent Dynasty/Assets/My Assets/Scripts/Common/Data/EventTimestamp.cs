@@ -1,13 +1,13 @@
 ﻿using Unity.Entities;
 
-public struct KnowledgeTimestamp {
+public struct EventTimestamp {
     public Entity Source;
     public int Day;
     public int Year;
     public TimeSeasonState SeasonState;
     public double TotalInGameSeconds;
 
-    public KnowledgeTimestamp(InGameTime inGameTime, Entity source){
+    public EventTimestamp(InGameTime inGameTime, Entity source){
         Source = source;
         Day = inGameTime.Days;
         Year = inGameTime.Years;

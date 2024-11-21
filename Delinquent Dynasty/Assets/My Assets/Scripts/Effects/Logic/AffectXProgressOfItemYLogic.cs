@@ -7,5 +7,10 @@ public struct AffectXProgressOfItemYLogic : IApplyActiveEffect {
     [ReadOnly] public ComponentLookup<ItemProgressKnowledgeComponent> ItemProgressLookup;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
-        Entity secondaryTarget = default){ }
+        out CharacterStateChangeSpawnElement primaryStateChange,
+        out CharacterStateChangeSpawnElement secondaryStateChange,
+        Entity secondaryTarget = default){
+        primaryStateChange = default;
+        secondaryStateChange = default;
+    }
 }

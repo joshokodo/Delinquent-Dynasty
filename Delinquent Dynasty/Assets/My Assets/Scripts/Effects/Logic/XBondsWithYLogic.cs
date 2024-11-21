@@ -17,12 +17,14 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
 
     [NativeDisableUnsafePtrRestriction] public RefRW<RandomComponent> RandomComponent;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
         var foundInterest = new FixedList4096Bytes<EffectCommonStatData>();
         var found = false;
         var limit = nextIntValue <= 1 ? 1 : nextIntValue;
 
+        primaryStateChange = default;
+        secondaryStateChange = default;
 
         foreach (var pi in PrimaryInterest){
             foreach (var si in SecondaryInterest){
@@ -108,6 +110,11 @@ public struct XBondsWithYLogic : IApplyActiveEffect {
         }
 
         if (found){
+            primaryStateChange.RelationshipChanged = true;
+            secondaryStateChange.RelationshipChanged = true;
+            primaryStateChange.InterestChanged = true;
+            secondaryStateChange.InterestChanged = true;
+            
             RelationshipElement relX = new RelationshipElement(){
                 Character = secondaryTarget,
                 MainTitle = RelationshipMainTitleType.ACQUAINTANCE

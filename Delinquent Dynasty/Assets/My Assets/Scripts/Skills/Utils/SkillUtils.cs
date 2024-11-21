@@ -7,13 +7,13 @@ using UnityEngine;
 public struct SkillUtils : FunctionalStruct {
     public SkillDataStore SkillDataStore;
 
-    public void AddSkill(DynamicBuffer<SkillElement> skills, SkillType skill, int initialLevel, int initialXp){
+    public bool AddSkill(DynamicBuffer<SkillElement> skills, SkillType skill, int initialLevel, int initialXp){
         if (skill == SkillType.NONE || skill == SkillType.COMMON){
-            return;
+            return false;
         }
 
         if (HasSkill(skills, skill)){
-            return;
+            return false;
         }
 
         skills.Add(new SkillElement(){
@@ -21,6 +21,7 @@ public struct SkillUtils : FunctionalStruct {
             CurrentLevel = initialLevel,
             CurrentXp = initialXp,
         });
+        return true;
     }
 
     public bool HasSkill(DynamicBuffer<SkillElement> skills, SkillType skillType){
@@ -45,8 +46,8 @@ public struct SkillUtils : FunctionalStruct {
         return false;
     }
 
-    public int AddXp(int value, SkillType skillType, DynamicBuffer<SkillElement> skills){
-        
+    public int AddXp(int value, SkillType skillType, DynamicBuffer<SkillElement> skills, out bool leveledUp){
+        leveledUp = false;
         for (int i = 0; i < skills.Length; i++){
             var skill = skills[i];
             if (skill.SkillType == skillType){
@@ -58,6 +59,7 @@ public struct SkillUtils : FunctionalStruct {
                 if (skill.CurrentXp >= xpToNextLvl){
                     skill.CurrentLevel++;
                     skill.CurrentXp = 0;
+                    leveledUp = true;
                 }
 
                 skills[i] = skill;

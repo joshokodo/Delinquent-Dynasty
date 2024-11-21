@@ -4,5 +4,5 @@
 public struct LastKnownTraitElement : IBufferElementData {
     public DynamicTraitType TraitType;
     public int Value;
-    public KnowledgeTimestamp Timestamp;
+    public EventTimestamp Timestamp;
 }

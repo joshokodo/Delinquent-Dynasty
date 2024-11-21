@@ -15,8 +15,14 @@ public struct XLearnsRandomFactCategoryAboutYLogic : IApplyActiveEffect {
     [ReadOnly] public DynamicBuffer<InterestElement> SecondaryInterest;
     [ReadOnly] public DynamicBuffer<WellnessElement> SecondaryWellness;
 
-    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue,
+    public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
         Entity secondaryTarget = default){
+        
+        primaryStateChange = default;
+        secondaryStateChange = default;
+        
+        primaryStateChange.KnowledgedChanged = true;
+        
         switch (data.PrimaryEnumValue.KnowledgeType){
             case KnowledgeType.LAST_KNOWN_SKILL:
                 //TODO: maybe just call existing logic struct like learn specific with params? do the same with learn random knowledge
