@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 [Serializable]
 public class ConditionDTO {
-    public ConditionType conditionType;
+    public DynamicConditionTypeDTO dynamicConditionType;
     public bool useGodVision;
     [FormerlySerializedAs("boolValue")] public bool expectedConditionValue;
 
@@ -29,7 +29,7 @@ public class ConditionDTO {
 
     public ConditionData ToConditionData(){
         var data = new ConditionData(){
-            ConditionType = conditionType,
+            DynamicConditionType = dynamicConditionType.ToData(),
             ExpectedConditionValue = expectedConditionValue,
             UseGodVision = useGodVision,
             NumericComparisonSign = numericComparisonSign,

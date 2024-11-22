@@ -8,6 +8,7 @@ public class GenericTargetDTO {
     public TargetType targetType;
     public int intValue;
     public DynamicGameEnumDTO dynamicEnumDtoType;
+    public string stringValue;
 
     public bool anyCondition;
     public List<ConditionDTO> genericTargetConditions;
@@ -28,6 +29,7 @@ public class GenericTargetDTO {
             CountValue = intValue,
             FindGenericTarget = true,
             AnyCondition = anyCondition,
+            TargetString = stringValue == null || stringValue.Length == 0 ? new () : new FixedString32Bytes(stringValue)
         };
     }
 }

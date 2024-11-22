@@ -199,135 +199,161 @@ public struct StringUtils {
             result.Append(i == 0 ? "If " : "& ");
             var targetsSelf = cond.PrimaryTarget == TargetType.SELF;
 
-            switch (cond.ConditionType){
-                case ConditionType.X_IS_SKILL_LEVEL:
-                    result.Append(cond.PrimaryEnumValue.SkillType + "lvl ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.X_HAS_TRAIT:
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(GetTraitTypeString(cond.PrimaryEnumValue.GetTraitType()) + " ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.FLAT_SUCCESS_CHANCE:
-                    result.Append(" " + cond.PrimaryNumberValue + "% chance ");
-                    break;
-
-                case ConditionType.ITEM_X_IS_EQUIPPED:
-                    result.Append(cond.ExpectedConditionValue ? " target item equipped" : " target item not equipped");
-                    break;
-
-                case ConditionType.ITEM_X_IS_ON:
-                    result.Append(cond.ExpectedConditionValue ? " target item is on" : "target item is off");
-                    break;
-
-                // case ConditionType.X_IS_AT_ROOM_Y:
-                //     result.Append(cond.ExpectedConditionValue
-                //         ? " you are a student"
-                //         : " you are not a student"); // todo: change this when we use character types
-                //     break;
-
-                case ConditionType.X_IS_TOTAL_ATTRIBUTE_LEVEL:
-                    result.Append(cond.PrimaryEnumValue.AttributeType + " Total Level ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.COMPARE_X_TOTAL_ATTRIBUTE_TO_Y_TOTAL_ATTRIBUTE:
-                    result.Append("Total ");
-                    result.Append(cond.PrimaryEnumValue.AttributeType + " ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" Others total " + cond.PrimaryEnumValue.AttributeType);
-                    break;
-
-                case ConditionType.X_BEATS_SKILL_CHECK:
-                    result.Append("Beats skill check for ");
-                    result.Append(cond.PrimaryEnumValue.SkillType + " vs " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.X_IS_TOTAL_ATTRIBUTE_LEVEL_RANKING:
-                    result.Append("Total ");
-                    result.Append(cond.PrimaryEnumValue.AttributeType + " ranking ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.X_RELATIONSHIP_STAT_FOR_Y:
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
-                    result.Append(targetsSelf ? "target " : "you ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
-                    break;
-
-                case ConditionType.X_RELATIONSHIP_STATS_FOR_Y_COMPARED:
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
-                    result.Append(targetsSelf ? "target " : "you ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.SecondaryEnumValue.RelationshipStatType + " for ");
-                    result.Append(targetsSelf ? "target " : "you ");
+            switch (cond.DynamicConditionType.Category){
+                case ConditionCategoryType.MISC:
+                    switch (cond.DynamicConditionType.MiscConditionType){
+                        case MiscConditionType.FLAT_SUCCESS_CHANCE:
+                            result.Append(" " + cond.PrimaryNumberValue + "% chance ");
+                            break;
+                    }
                     break;
                 
-                case ConditionType.X_RELATIONSHIP_STAT_COMPARED_TO_Y_STAT:
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
-                    result.Append(targetsSelf ? "target " : "you ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(targetsSelf ? "Target's " : "Your ");
-                    result.Append(cond.SecondaryEnumValue.RelationshipStatType + " for ");
-                    result.Append(targetsSelf ? "you " : "target ");
+                case ConditionCategoryType.ITEMS:
+                    switch (cond.DynamicConditionType.ItemConditionType){
+                        case ItemConditionType.ITEM_X_IS_EQUIPPED:
+                            result.Append(cond.ExpectedConditionValue ? " target item equipped" : " target item not equipped");
+                            break;
+                        
+                        case ItemConditionType.ITEM_X_IS_ON:
+                            result.Append(cond.ExpectedConditionValue ? " target item is on" : "target item is off");
+                            break;
+                    }
+                    break;
+                
+                case ConditionCategoryType.SKILL:
+                    switch (cond.DynamicConditionType.SkillConditionType){
+                        case SkillConditionType.X_IS_SKILL_LEVEL:
+                            result.Append(cond.PrimaryEnumValue.SkillType + "lvl ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                        
+                        case SkillConditionType.X_BEATS_SKILL_CHECK:
+                            result.Append("Beats skill check for ");
+                            result.Append(cond.PrimaryEnumValue.SkillType + " vs " + cond.PrimaryNumberValue);
+                            break;
+                    }
+                    break;
+                
+                case ConditionCategoryType.TRAITS:
+                    switch (cond.DynamicConditionType.TraitConditionType){
+                        case TraitConditionType.X_HAS_TRAIT:
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(GetTraitTypeString(cond.PrimaryEnumValue.GetTraitType()) + " ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                    
+                    }
                     break;
 
-                case ConditionType.X_WELLNESS_STATS_COMPARED:
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.PrimaryEnumValue.WellnessType + " ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(targetsSelf ? "Your " : "Target's ");
-                    result.Append(cond.SecondaryEnumValue.WellnessType + " ");
-                    break;
+                case ConditionCategoryType.ATTRIBUTES:
+                    switch (cond.DynamicConditionType.AttributeConditionType){
+                        case AttributeConditionType.X_IS_TOTAL_ATTRIBUTE_LEVEL:
+                            result.Append(cond.PrimaryEnumValue.AttributeType + " Total Level ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
 
-                case ConditionType.X_NATURAL_ATTRIBUTES_STATS_COMPARED:
-                    result.Append(targetsSelf ? "Your natural " : "Target's natural ");
-                    result.Append(cond.PrimaryEnumValue.AttributeType + " ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(targetsSelf ? "Your natural " : "Target's natural ");
-                    result.Append(cond.SecondaryEnumValue.AttributeType + " ");
-                    break;
+                        case AttributeConditionType.COMPARE_X_TOTAL_ATTRIBUTE_TO_Y_TOTAL_ATTRIBUTE:
+                            result.Append("Total ");
+                            result.Append(cond.PrimaryEnumValue.AttributeType + " ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" Others total " + cond.PrimaryEnumValue.AttributeType);
+                            break;
+                        
+                        case AttributeConditionType.X_IS_TOTAL_ATTRIBUTE_LEVEL_RANKING:
+                            result.Append("Total ");
+                            result.Append(cond.PrimaryEnumValue.AttributeType + " ranking ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                        
+                        case AttributeConditionType.X_NATURAL_ATTRIBUTES_STATS_COMPARED:
+                            result.Append(targetsSelf ? "Your natural " : "Target's natural ");
+                            result.Append(cond.PrimaryEnumValue.AttributeType + " ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(targetsSelf ? "Your natural " : "Target's natural ");
+                            result.Append(cond.SecondaryEnumValue.AttributeType + " ");
+                            break;
+                    }
 
-                case ConditionType.X_HAS_INTEREST:
-                    result.Append(targetsSelf ? "Your interest in " : "Target's interest in ");
-                    result.Append(GetTypeString(cond.SecondaryEnumValue) + " ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
                     break;
-
-                case ConditionType.X_HAS_COMMON_INTEREST_WITH_Y:
-                    result.Append("You and target's common interest count ");
-                    result = SetNumericComparisionString(cond.NumericComparisonSign, result,
-                        cond.ExpectedConditionValue);
-                    result.Append(" " + cond.PrimaryNumberValue);
+                
+                case ConditionCategoryType.RELATIONSHIP:
+                    switch (cond.DynamicConditionType.RelationshipConditionType){
+                        case RelationshipConditionType.X_RELATIONSHIP_STAT_FOR_Y:
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
+                            result.Append(targetsSelf ? "target " : "you ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                        
+                        case RelationshipConditionType.X_RELATIONSHIP_STATS_FOR_Y_COMPARED:
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
+                            result.Append(targetsSelf ? "target " : "you ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.SecondaryEnumValue.RelationshipStatType + " for ");
+                            result.Append(targetsSelf ? "target " : "you ");
+                            break;
+                        
+                        case RelationshipConditionType.X_RELATIONSHIP_STAT_COMPARED_TO_Y_STAT:
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.PrimaryEnumValue.RelationshipStatType + " for ");
+                            result.Append(targetsSelf ? "target " : "you ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(targetsSelf ? "Target's " : "Your ");
+                            result.Append(cond.SecondaryEnumValue.RelationshipStatType + " for ");
+                            result.Append(targetsSelf ? "you " : "target ");
+                            break;
+                    
+                    }
+                    
                     break;
-                default:
-                    throw new NotImplementedException("add case for " +
-                                                      cond
-                                                          .ConditionType); // TODO: just add the rest later when not lazy
+                
+                case ConditionCategoryType.WELLNESS:
+                    switch (cond.DynamicConditionType.WellnessConditionType){
+                        case WellnessConditionType.X_WELLNESS_STATS_COMPARED:
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.PrimaryEnumValue.WellnessType + " ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(targetsSelf ? "Your " : "Target's ");
+                            result.Append(cond.SecondaryEnumValue.WellnessType + " ");
+                            break;
+                    }
+                    break;
+                
+                case ConditionCategoryType.INTEREST:
+                    switch (cond.DynamicConditionType.InterestConditionType){
+                        case InterestConditionType.X_HAS_INTEREST:
+                            result.Append(targetsSelf ? "Your interest in " : "Target's interest in ");
+                            result.Append(GetTypeString(cond.SecondaryEnumValue) + " ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                        
+                        case InterestConditionType.X_HAS_COMMON_INTEREST_WITH_Y:
+                            result.Append("You and target's common interest count ");
+                            result = SetNumericComparisionString(cond.NumericComparisonSign, result,
+                                cond.ExpectedConditionValue);
+                            result.Append(" " + cond.PrimaryNumberValue);
+                            break;
+                    }
+                    break;
             }
 
             result.Append("\n");

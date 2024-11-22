@@ -28,7 +28,22 @@ MonoBehaviour:
   usesLocomotion: 0
   usesInfluence: 0
   prerequisites:
-  - conditionType: 2
+  - dynamicConditionType:
+      academicConditionType: 0
+      activityConditionType: 0
+      attributeConditionType: 0
+      characterConditionType: 0
+      interactableConditionType: 0
+      interestConditionType: 0
+      inventoryConditionType: 0
+      itemConditionType: 0
+      locomotionConditionType: 0
+      miscConditionType: 0
+      relationshipConditionType: 0
+      skillConditionType: 1
+      timeConditionType: 0
+      traitConditionType: 0
+      wellnessConditionType: 0
     useGodVision: 0
     expectedConditionValue: 1
     primaryTarget: 1
@@ -36,10 +51,10 @@ MonoBehaviour:
     primaryNumberValue: 5
     secondaryNumberValue: 0
     numericComparisonSign: 4
-    aliasValue: 
-    checkHasAlias: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -82,6 +97,7 @@ MonoBehaviour:
       classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
@@ -145,6 +161,7 @@ MonoBehaviour:
       originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -187,6 +204,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -229,6 +247,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -272,6 +291,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -326,6 +346,7 @@ MonoBehaviour:
       originLearnsKnowledge: 1
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -368,6 +389,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -410,6 +432,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -453,6 +476,7 @@ MonoBehaviour:
       primaryNumberScale: 12
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -502,6 +526,7 @@ MonoBehaviour:
       originLearnsKnowledge: 1
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -544,6 +569,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -586,6 +612,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -629,6 +656,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -678,6 +706,7 @@ MonoBehaviour:
       originLearnsKnowledge: 1
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -720,6 +749,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -762,6 +792,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -805,6 +836,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -854,6 +886,7 @@ MonoBehaviour:
       originLearnsKnowledge: 1
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -896,6 +929,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -938,6 +972,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -981,6 +1016,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1036,6 +1072,7 @@ MonoBehaviour:
       originLearnsKnowledge: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1078,6 +1115,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1120,6 +1158,7 @@ MonoBehaviour:
         classRoomSubject: 0
       tertiaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1163,6 +1202,7 @@ MonoBehaviour:
       primaryNumberScale: 0
       primaryEnumScale:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0

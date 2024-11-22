@@ -24,11 +24,12 @@ MonoBehaviour:
     externalEvents: 0
     xEnumType:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -67,7 +68,22 @@ MonoBehaviour:
   groupId: Dorm Room
   anyCondition: 0
   conditions:
-  - conditionType: 3
+  - dynamicConditionType:
+      academicConditionType: 0
+      activityConditionType: 0
+      attributeConditionType: 0
+      characterConditionType: 0
+      interactableConditionType: 0
+      interestConditionType: 0
+      inventoryConditionType: 0
+      itemConditionType: 0
+      locomotionConditionType: 1
+      miscConditionType: 0
+      relationshipConditionType: 0
+      skillConditionType: 0
+      timeConditionType: 0
+      traitConditionType: 0
+      wellnessConditionType: 0
     useGodVision: 0
     expectedConditionValue: 1
     primaryTarget: 1
@@ -75,15 +91,15 @@ MonoBehaviour:
     primaryNumberValue: 0
     secondaryNumberValue: 0
     numericComparisonSign: 0
-    aliasValue: 
-    checkHasAlias: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -121,11 +137,12 @@ MonoBehaviour:
       classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -166,11 +183,12 @@ MonoBehaviour:
     intValue: 0
     dynamicEnumDtoType:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -206,11 +224,25 @@ MonoBehaviour:
       interestSubjectType: 0
       roomType: 0
       classRoomSubject: 0
-    aliasValue: 
-    checkHasAlias: 0
+    stringValue: 
     anyCondition: 0
     genericTargetConditions:
-    - conditionType: 51
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 0
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 4
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 0
       primaryTarget: 34
@@ -218,15 +250,15 @@ MonoBehaviour:
       primaryNumberValue: 0
       secondaryNumberValue: 0
       numericComparisonSign: 0
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -264,11 +296,12 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -304,23 +337,38 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-    - conditionType: 50
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 5
+        interactableConditionType: 0
+        interestConditionType: 0
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 0
-      primaryTarget: 34
-      secondaryTarget: 1
+      primaryTarget: 1
+      secondaryTarget: 34
       primaryNumberValue: 0
       secondaryNumberValue: 0
       numericComparisonSign: 0
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0
@@ -358,11 +406,12 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
           LocomotionActionType: 0

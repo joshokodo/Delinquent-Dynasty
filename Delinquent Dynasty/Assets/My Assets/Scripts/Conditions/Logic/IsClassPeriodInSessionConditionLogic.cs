@@ -2,21 +2,22 @@
 
 public struct IsClassPeriodInSessionConditionLogic : IConditionCheck {
     public bool Result(ConditionUtils utils, ConditionData conditionData){
-        switch (conditionData.PrimaryNumberValue){
-            case 1:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod1();
-            case 2:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod2();
-            case 3:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod3();
-            case 4:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod4();
-            case 5:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod5();
-            case 6:
-                return conditionData.ExpectedConditionValue == utils.InGameTime.IsPeriod6();
+
+        var val = 0;
+        if (utils.InGameTime.IsPeriod1()){
+            val = 1;
+        } else if (utils.InGameTime.IsPeriod2()){
+            val = 2;
+        } else if (utils.InGameTime.IsPeriod3()){
+            val = 3;
+        } else if (utils.InGameTime.IsPeriod4()){
+            val = 4;
+        } else if (utils.InGameTime.IsPeriod5()){
+            val = 5;
+        } else if (utils.InGameTime.IsPeriod6()){
+            val = 6;
         }
 
-        return !conditionData.ExpectedConditionValue;
+        return NumberUtils.CheckNumberComparision(conditionData.NumericComparisonSign, val, (int) conditionData.PrimaryNumberValue) == conditionData.ExpectedConditionValue;
     }
 }

@@ -15,6 +15,7 @@ MonoBehaviour:
   subjectType: 2
   primaryEnumValue:
     actionCategory: 0
+    targetType: 0
     traitType:
       defaultCategory: 0
       geneticCategory: 0
@@ -63,6 +64,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -105,6 +107,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -147,6 +150,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -204,7 +208,22 @@ MonoBehaviour:
       maxIntValue: 20
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -212,10 +231,10 @@ MonoBehaviour:
       primaryNumberValue: 0
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -258,6 +277,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -305,6 +325,7 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -347,6 +368,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -389,6 +411,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -446,7 +469,22 @@ MonoBehaviour:
       maxIntValue: 1
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -454,10 +492,10 @@ MonoBehaviour:
       primaryNumberValue: 100
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -500,6 +538,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -540,7 +579,22 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-    - conditionType: 4
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 0
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -548,10 +602,10 @@ MonoBehaviour:
       primaryNumberValue: 1
       secondaryNumberValue: 0
       numericComparisonSign: 5
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -594,6 +648,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -641,6 +696,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -683,6 +739,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -725,6 +782,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -782,7 +840,22 @@ MonoBehaviour:
       maxIntValue: 20
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -790,10 +863,10 @@ MonoBehaviour:
       primaryNumberValue: 100
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -836,6 +909,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -883,6 +957,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -925,6 +1000,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -967,6 +1043,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1028,6 +1105,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1070,6 +1148,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1112,6 +1191,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1169,7 +1249,22 @@ MonoBehaviour:
       maxIntValue: 20
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -1177,10 +1272,10 @@ MonoBehaviour:
       primaryNumberValue: 200
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1223,6 +1318,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1270,6 +1366,7 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1312,6 +1409,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1354,6 +1452,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1411,7 +1510,22 @@ MonoBehaviour:
       maxIntValue: 1
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -1419,10 +1533,10 @@ MonoBehaviour:
       primaryNumberValue: 300
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1465,6 +1579,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1505,7 +1620,22 @@ MonoBehaviour:
         interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
-    - conditionType: 4
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 0
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -1513,10 +1643,10 @@ MonoBehaviour:
       primaryNumberValue: 1
       secondaryNumberValue: 0
       numericComparisonSign: 5
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1559,6 +1689,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1606,6 +1737,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1648,6 +1780,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1690,6 +1823,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1747,7 +1881,22 @@ MonoBehaviour:
       maxIntValue: 20
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -1755,10 +1904,10 @@ MonoBehaviour:
       primaryNumberValue: 300
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1801,6 +1950,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1848,6 +1998,7 @@ MonoBehaviour:
       bonusNumericType: 2
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1890,6 +2041,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1932,6 +2084,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -1989,7 +2142,22 @@ MonoBehaviour:
       maxIntValue: 20
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -1997,10 +2165,10 @@ MonoBehaviour:
       primaryNumberValue: 400
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2043,6 +2211,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2090,6 +2259,7 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2132,6 +2302,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2174,6 +2345,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2231,7 +2403,22 @@ MonoBehaviour:
       maxIntValue: 5
     anyCondition: 0
     conditions:
-    - conditionType: 33
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 1
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 0
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -2239,10 +2426,10 @@ MonoBehaviour:
       primaryNumberValue: 500
       secondaryNumberValue: 0
       numericComparisonSign: 4
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -2285,6 +2472,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0

@@ -1,0 +1,6 @@
+﻿public enum RelationshipConditionType {
+    NONE,
+    X_RELATIONSHIP_STAT_FOR_Y,
+    X_RELATIONSHIP_STAT_COMPARED_TO_Y_STAT,
+    X_RELATIONSHIP_STATS_FOR_Y_COMPARED,
+}

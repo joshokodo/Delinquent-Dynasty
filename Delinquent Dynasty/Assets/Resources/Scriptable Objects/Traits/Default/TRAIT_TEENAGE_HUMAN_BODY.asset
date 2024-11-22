@@ -31,6 +31,7 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -73,6 +74,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -115,6 +117,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -176,6 +179,7 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -218,6 +222,7 @@ MonoBehaviour:
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -260,6 +265,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -317,7 +323,22 @@ MonoBehaviour:
       maxIntValue: 1
     anyCondition: 0
     conditions:
-    - conditionType: 7
+    - dynamicConditionType:
+        academicConditionType: 0
+        activityConditionType: 0
+        attributeConditionType: 0
+        characterConditionType: 0
+        interactableConditionType: 0
+        interestConditionType: 0
+        inventoryConditionType: 0
+        itemConditionType: 0
+        locomotionConditionType: 0
+        miscConditionType: 0
+        relationshipConditionType: 0
+        skillConditionType: 0
+        timeConditionType: 0
+        traitConditionType: 0
+        wellnessConditionType: 1
       useGodVision: 0
       expectedConditionValue: 1
       primaryTarget: 1
@@ -325,10 +346,10 @@ MonoBehaviour:
       primaryNumberValue: 0
       secondaryNumberValue: 0
       numericComparisonSign: 3
-      aliasValue: 
-      checkHasAlias: 0
+      primaryStringValue: 
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
@@ -371,6 +392,7 @@ MonoBehaviour:
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0

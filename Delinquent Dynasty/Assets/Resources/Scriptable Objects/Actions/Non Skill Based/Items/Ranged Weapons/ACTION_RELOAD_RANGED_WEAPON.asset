@@ -28,11 +28,26 @@ MonoBehaviour:
   usesLocomotion: 0
   usesInfluence: 0
   prerequisites:
-  - conditionType: 11
+  - dynamicConditionType:
+      academicConditionType: 0
+      activityConditionType: 0
+      attributeConditionType: 0
+      characterConditionType: 0
+      interactableConditionType: 0
+      interestConditionType: 0
+      inventoryConditionType: 0
+      itemConditionType: 3
+      locomotionConditionType: 0
+      miscConditionType: 0
+      relationshipConditionType: 0
+      skillConditionType: 0
+      timeConditionType: 0
+      traitConditionType: 0
+      wellnessConditionType: 0
     useGodVision: 0
     expectedConditionValue: 1
-    primaryTarget: 3
-    secondaryTarget: 0
+    primaryTarget: 1
+    secondaryTarget: 3
     primaryNumberValue: 0
     secondaryNumberValue: 0
     numericComparisonSign: 0

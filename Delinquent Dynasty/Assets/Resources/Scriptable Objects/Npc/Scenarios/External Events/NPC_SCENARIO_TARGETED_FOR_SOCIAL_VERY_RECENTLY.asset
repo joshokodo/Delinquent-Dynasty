@@ -24,11 +24,12 @@ MonoBehaviour:
     externalEvents: 4
     xEnumType:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -42,7 +43,8 @@ MonoBehaviour:
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
-      RelationshipTitleType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
       ItemType:
         clothingCategory: 0
         meleeCategory: 0
@@ -60,46 +62,44 @@ MonoBehaviour:
       LocomotionState: 0
       KnowledgeType: 0
       generalInterestType: 0
-      interestInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
+  groupId: 
+  anyCondition: 0
   conditions:
-  - conditionType: 40
-    isDeleteCondition: 0
+  - dynamicConditionType:
+      academicConditionType: 0
+      activityConditionType: 4
+      attributeConditionType: 0
+      characterConditionType: 0
+      interactableConditionType: 0
+      interestConditionType: 0
+      inventoryConditionType: 0
+      itemConditionType: 0
+      locomotionConditionType: 0
+      miscConditionType: 0
+      relationshipConditionType: 0
+      skillConditionType: 0
+      timeConditionType: 0
+      traitConditionType: 0
+      wellnessConditionType: 0
+    useGodVision: 0
     expectedConditionValue: 1
     primaryTarget: 1
     secondaryTarget: 0
-    primaryGenericTarget:
-      CharacterTarget: 0
-      roomTarget: 0
-      BedTarget: 0
-      ItemTarget: 0
-      KnowledgeTarget: 0
-      SeatTarget: 0
-      InventoryLocationTarget: 0
-    secondaryGenericTarget:
-      CharacterTarget: 0
-      roomTarget: 0
-      BedTarget: 0
-      ItemTarget: 0
-      KnowledgeTarget: 0
-      SeatTarget: 0
-      InventoryLocationTarget: 0
     primaryNumberValue: 60
     secondaryNumberValue: 0
     numericComparisonSign: 6
-    startHour: 0
-    startMin: 0
-    endHour: 0
-    endMin: 0
-    aliasValue: 
-    checkHasAlias: 0
-    aliasTargetType: 0
+    primaryStringValue: 
     primaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -113,7 +113,8 @@ MonoBehaviour:
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
-      RelationshipTitleType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
       ItemType:
         clothingCategory: 0
         meleeCategory: 0
@@ -131,14 +132,17 @@ MonoBehaviour:
       LocomotionState: 0
       KnowledgeType: 0
       generalInterestType: 0
-      interestInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
     secondaryEnumValue:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
         LocomotionActionType: 0
@@ -152,7 +156,8 @@ MonoBehaviour:
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
-      RelationshipTitleType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
       ItemType:
         clothingCategory: 0
         meleeCategory: 0
@@ -170,5 +175,8 @@ MonoBehaviour:
       LocomotionState: 0
       KnowledgeType: 0
       generalInterestType: 0
-      interestInterestType: 0
+      interestSubjectType: 0
+      roomType: 0
+      classRoomSubject: 0
+  conditionTargets: []
   scenarioCheckType: 1
