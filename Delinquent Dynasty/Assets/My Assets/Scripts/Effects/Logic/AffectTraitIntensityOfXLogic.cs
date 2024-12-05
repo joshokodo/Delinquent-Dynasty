@@ -11,9 +11,10 @@ public struct AffectTraitIntensityOfXLogic : IApplyActiveEffect {
     public InGameTime InGameTime;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
         
         var added = TraitUtils.AddTrait(primaryTarget, PassiveEffectSpawnElements, data.PrimaryEnumValue.GetTraitType(),
             nextIntValue, Traits, InGameTime, sourceEntity);

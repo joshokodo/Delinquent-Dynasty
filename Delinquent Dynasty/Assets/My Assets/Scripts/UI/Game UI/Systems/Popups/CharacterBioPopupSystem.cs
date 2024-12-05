@@ -62,6 +62,11 @@ public partial class CharacterBioPopupSystem : SystemBase {
                 selectedAspect.Selected.ValueRW.UpdateRelationshipsUI = false;
                 UpdateRelationships(e);
             }
+            else if (_popupClone.isActiveAndEnabled && "Academics".Equals(_popupClone.Tabs.SelectedTab.Name)
+                                                    && selectedAspect.Selected.ValueRO.updateAcademicsUI){
+                selectedAspect.Selected.ValueRW.UpdateTraitsUI = false;
+                UpdateAcademics(e);
+            }
         }
     }
 
@@ -206,7 +211,31 @@ public partial class CharacterBioPopupSystem : SystemBase {
         _popupClone.PersonalStatusTraitsText.text = _stringBuilder3.Replace("_", " ").ToString();
     }
 
-    private void UpdateAcademics(Entity e){ }
+    private void UpdateAcademics(Entity e){
+        _popupClone.ClassPeriodListView.DataSource.Clear();
+        _popupClone.ClassPeriodListView.DataSource.EndUpdate();
+        // todo check we are looking at student
+        var academics = SystemAPI.GetComponent<StudentAcademicComponent>(e);
+
+        _stringBuilder1.Clear();
+        _stringBuilder1.Append("Locker: ");
+        _stringBuilder1.Append(SystemAPI.GetComponent<InteractableLocationComponent>(academics.LockerEntity).Alias);
+        _stringBuilder1.Append("\nDorm: ");
+        var room = SystemAPI.GetComponent<BedComponent>(academics.BedEntity).RoomEntity;
+        _stringBuilder1.Append(SystemAPI.GetComponent<RoomComponent>(room).RoomName);
+
+        _popupClone.AcademicsText.text = _stringBuilder1.ToString();
+
+        var periods = SystemAPI.GetBuffer<ClassroomPeriodElement>(academics.ClassEntity1);
+        var item = new ClassPeriodElementUI();
+        item.Period = 1;
+        item.SkillType = periods[0].Subject;
+        item.Grade = "A+ (99% Fix ME)";
+        item.AssignmentsTotal = "Assignments: 299/300";
+        
+        _popupClone.ClassPeriodListView.DataSource.Add(item);
+        _popupClone.ClassPeriodListView.DataSource.BeginUpdate();
+    }
 
     private void UpdateRelationships(Entity e){
         _popupClone.RelationshipListView.DataSource.Clear();

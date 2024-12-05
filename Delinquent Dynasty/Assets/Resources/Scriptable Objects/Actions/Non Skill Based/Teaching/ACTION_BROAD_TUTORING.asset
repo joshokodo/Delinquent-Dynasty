@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_BROAD_TUTORING
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 2
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 2
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: 42e397f4ab0b5754281f239a89fa4af2, type: 3}
   targetTypes: 0f000000
   skillUsed: 34

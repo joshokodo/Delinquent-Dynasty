@@ -76,6 +76,12 @@ public struct StringUtils {
                 return new FixedString128Bytes(((LocomotionActionType) intValue).ToString());
             case GameEnumType.ROOM_TYPE:
                 return new FixedString128Bytes(((RoomType) intValue).ToString());
+            case GameEnumType.COMMON_TECH_ACTION_TYPE:
+                return new FixedString128Bytes(((CommonTechActionType) intValue).ToString());
+            case GameEnumType.SKILL_BASED_TECH_ACTION_TYPE:
+                return new FixedString128Bytes(((SkillBasedTechActionType) intValue).ToString());
+            default:
+                throw new NotImplementedException("Add case here");
         }
 
         return default;
@@ -99,6 +105,10 @@ public struct StringUtils {
                 return new FixedString128Bytes(actionType.MiscActionType.ToString());
             case ActionCategory.LOCOMOTION:
                 return new FixedString128Bytes(actionType.LocomotionActionType.ToString());
+            case ActionCategory.COMMON_TECH:
+                return new FixedString128Bytes(actionType.CommonTechActionType.ToString());
+            case ActionCategory.SKILL_TECH:
+                return new FixedString128Bytes(actionType.SkillBasedTechActionType.ToString());
         }
 
         return new FixedString128Bytes();
@@ -213,8 +223,12 @@ public struct StringUtils {
                         case ItemConditionType.ITEM_X_IS_EQUIPPED:
                             result.Append(cond.ExpectedConditionValue ? " target item equipped" : " target item not equipped");
                             break;
-                        
-                        case ItemConditionType.ITEM_X_IS_ON:
+                    }
+                    break;
+                
+                case ConditionCategoryType.TECH:
+                    switch (cond.DynamicConditionType.TechConditionType){
+                        case TechConditionType.TECH_X_IS_ON:
                             result.Append(cond.ExpectedConditionValue ? " target item is on" : "target item is off");
                             break;
                     }

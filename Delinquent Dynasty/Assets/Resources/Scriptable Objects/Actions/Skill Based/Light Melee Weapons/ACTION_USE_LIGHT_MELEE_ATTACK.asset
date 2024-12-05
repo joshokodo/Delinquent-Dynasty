@@ -13,22 +13,24 @@ MonoBehaviour:
   m_Name: ACTION_USE_LIGHT_MELEE_ATTACK
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 3
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 2
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 0}
   targetTypes: 02000000
   skillUsed: 10
   quickActionCategory: 2
-  usesLocomotion: 0
+  usesLocomotion: 1
   usesInfluence: 0
   prerequisites: []
-  functions: 0200000005000000
+  functions: 02000000050000000100000003000000
   genericDescription: 
   actionTitleString: 
   performingActionString: 

@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_LAY_ON_INTERACTABLE
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 4
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 4
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 0}
   targetTypes: 0a000000
   skillUsed: 34

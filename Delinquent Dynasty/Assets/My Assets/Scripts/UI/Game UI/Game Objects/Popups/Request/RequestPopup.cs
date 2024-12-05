@@ -7,18 +7,23 @@ using UnityEngine.UI;
 public class RequestPopup : Popup {
     public TextMeshProUGUI RequestText;
     public Image TimeBar;
-    public event Action YesSelected;
-    public event Action NoSelected;
+    public event Action<bool> ChoiceSelected;
+
+    public override void Close(){
+        base.Close();
+        RequestText.text = string.Empty;
+        TimeBar.fillAmount = 0;
+    }
 
     public void SetTimeBar(float ratio){
         TimeBar.fillAmount = ratio;
     }
 
     public void ClickedYes(){
-        YesSelected?.Invoke();
+        ChoiceSelected?.Invoke(true);
     }
     
     public void ClickedNo(){
-        NoSelected?.Invoke();
+        ChoiceSelected?.Invoke(false);
     }
 }

@@ -6,7 +6,7 @@
     INTEREST,
     TRAITS,
     ITEMS,
-    LOCOMOTION,
+    LOCATION,
     TIME,
     ACTIVITY,
     CHARACTER,
@@ -14,5 +14,6 @@
     ACADEMIC,
     INVENTORY,
     MISC,
-    RELATIONSHIP
+    RELATIONSHIP,
+    TECH,
 }

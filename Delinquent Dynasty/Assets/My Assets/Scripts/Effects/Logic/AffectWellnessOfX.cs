@@ -17,13 +17,14 @@ public struct AffectWellnessOfX : IApplyActiveEffect {
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         var number = nextIntValue;
         var isDamage = number < 0;
         var isRestore = number > 0;
         
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
 
         if (CheckSourceForPassives){
             number = SourcePassivesUtil.OnAffectOtherWellness(data,

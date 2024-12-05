@@ -18,7 +18,7 @@ public struct InclusivelyAffectRelationshipStatForXAndYLogic : IApplyActiveEffec
     public CharactersDataStore CharacterDataStore;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         var number = nextIntValue;
         var isGain = number > 0;
         var isLost = number < 0;
@@ -26,6 +26,7 @@ public struct InclusivelyAffectRelationshipStatForXAndYLogic : IApplyActiveEffec
         
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
         
         primaryStateChange.RelationshipChanged = true;
         secondaryStateChange.RelationshipChanged = true;

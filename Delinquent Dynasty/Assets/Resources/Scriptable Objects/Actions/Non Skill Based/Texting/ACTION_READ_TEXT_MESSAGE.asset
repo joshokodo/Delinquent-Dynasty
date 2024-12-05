@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_READ_TEXT_MESSAGE
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
-    commonItemActionType: 14
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
+    commonItemActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 7
   actionSprite: {fileID: 21300000, guid: daf896d86eb3d994f9b1655fd2607756, type: 3}
   targetTypes: 18000000
   skillUsed: 34

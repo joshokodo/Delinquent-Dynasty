@@ -1,5 +1,6 @@
-﻿using Unity.Entities;
+﻿using Unity.Collections;
+using Unity.Entities;
 
 public struct AppElement : IBufferElementData {
-    public Entity AppEntity;
+    public FixedString32Bytes AppName;
 }

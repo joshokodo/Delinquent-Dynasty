@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_MAKE_FUN_OF
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 16
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 16
     commonItemActionType: 0
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: aafbdeb20fb9950438da80b5b32ced6c, type: 3}
   targetTypes: 02000000
   skillUsed: 29
@@ -62,14 +64,16 @@ MonoBehaviour:
         wellBeingCategory: 0
         statusCategory: 0
       actionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
@@ -105,14 +109,16 @@ MonoBehaviour:
         wellBeingCategory: 0
         statusCategory: 0
       actionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
@@ -169,14 +175,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 1
         RelationshipStatType: 0
@@ -212,14 +220,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -255,14 +265,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -299,14 +311,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -349,14 +363,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -392,14 +408,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -435,14 +453,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -479,14 +499,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -534,14 +556,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 1
@@ -577,14 +601,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -620,14 +646,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -664,14 +692,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -714,14 +744,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 6
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -757,14 +789,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -800,14 +834,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -844,14 +880,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -899,14 +937,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 1
@@ -942,14 +982,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -985,14 +1027,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1029,14 +1073,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1079,14 +1125,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 6
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1122,14 +1170,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1165,14 +1215,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1209,14 +1261,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1264,14 +1318,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 1
@@ -1307,14 +1363,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1350,14 +1408,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1394,14 +1454,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1444,14 +1506,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 6
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1487,14 +1551,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1530,14 +1596,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1574,14 +1642,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1629,14 +1699,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 1
@@ -1672,14 +1744,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1715,14 +1789,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1759,14 +1835,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1809,14 +1887,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 6
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1852,14 +1932,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1895,14 +1977,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1939,14 +2023,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -1994,14 +2080,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 1
@@ -2037,14 +2125,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2080,14 +2170,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2124,14 +2216,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2174,14 +2268,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 6
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2217,14 +2313,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2260,14 +2358,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2304,14 +2404,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2359,14 +2461,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2402,14 +2506,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2445,14 +2551,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2489,14 +2597,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2560,14 +2670,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2603,14 +2715,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2654,14 +2768,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2697,14 +2813,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2740,14 +2858,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2784,14 +2904,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2855,14 +2977,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2898,14 +3022,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2949,14 +3075,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -2992,14 +3120,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3035,14 +3165,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3079,14 +3211,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3150,14 +3284,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3193,14 +3329,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3244,14 +3382,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3287,14 +3427,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3330,14 +3472,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3374,14 +3518,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3445,14 +3591,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3488,14 +3636,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3539,14 +3689,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3582,14 +3734,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3625,14 +3779,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3669,14 +3825,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3740,14 +3898,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3783,14 +3943,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3835,14 +3997,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 1
         RelationshipStatType: 0
@@ -3878,14 +4042,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3921,14 +4087,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -3965,14 +4133,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -4015,14 +4185,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -4058,14 +4230,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -4101,14 +4275,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
@@ -4145,14 +4321,16 @@ MonoBehaviour:
           wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0

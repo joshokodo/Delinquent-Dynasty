@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_CLOSE_BUSINESS
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
-    commonItemActionType: 24
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
+    commonItemActionType: 15
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: c086349e3f151499fa3d649cab241805, type: 3}
   targetTypes: 05000000
   skillUsed: 34

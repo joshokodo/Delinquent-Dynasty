@@ -124,14 +124,14 @@ public struct ItemUtils : FunctionalStruct {
     // }
 
     public void TransferCashTo(EntityCommandBuffer ecb, DynamicBuffer<ItemSpawnElement> itemSpawnElements,
-        BufferLookup<ItemElement> itemsLookup, ComponentLookup<ItemStackComponent> stackLookup,
+        DynamicBuffer<ItemElement> originInv, ComponentLookup<ItemStackComponent> stackLookup,
         ComponentLookup<ItemBaseComponent> itemBaseLookup, Entity origin, Entity target, int transferAmount){
-        var originInv = itemsLookup[origin];
-        RemoveCash(origin, Entity.Null, itemsLookup, ecb, originInv, transferAmount, stackLookup, itemBaseLookup);
+        
+        RemoveCash(origin, ecb, originInv, transferAmount, stackLookup, itemBaseLookup);
         TriggerCreateItemFor(target, itemSpawnElements, new DynamicItemType(CurrencyItemCategory.CASH), transferAmount);
     }
 
-    private int RemoveCash(Entity origin, Entity parent, BufferLookup<ItemElement> itemsLookup, EntityCommandBuffer ecb,
+    private int RemoveCash(Entity origin, EntityCommandBuffer ecb,
         DynamicBuffer<ItemElement> inventory, int remaining, ComponentLookup<ItemStackComponent> stackLookup,
         ComponentLookup<ItemBaseComponent> itemBaseLookup){
         for (var i = 0; i < inventory.Length; i++){
@@ -155,10 +155,6 @@ public struct ItemUtils : FunctionalStruct {
                     ecb.SetComponent(itemElement.ItemEntity, stack);
                     remaining = 0;
                 }
-            }
-            else if (itemsLookup.TryGetBuffer(itemElement.ItemEntity, out DynamicBuffer<ItemElement> innerInventory)){
-                remaining = RemoveCash(itemElement.ItemEntity, origin, itemsLookup, ecb, innerInventory, remaining,
-                    stackLookup, itemBaseLookup);
             }
         }
 

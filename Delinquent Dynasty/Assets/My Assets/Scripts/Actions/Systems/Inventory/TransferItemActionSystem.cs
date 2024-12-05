@@ -129,7 +129,7 @@ public partial struct TransferItemJob : IJobEntity {
                     });
 
                     var baseItem = ItemBaseLookup[removedItemEntity];
-                    baseItem.InventoryEntity = comp.CharacterEntity;
+                    baseItem.HoldingEntity = comp.CharacterEntity;
                     Ecb.SetComponent(removedItemEntity, baseItem);
                 }
                 else{

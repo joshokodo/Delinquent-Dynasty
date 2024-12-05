@@ -102,7 +102,7 @@ public partial struct EquipItemMainThreadJob : IJobEntity {
             equipment.isEquipped = true;
 
             Ecb.SetComponent(equipmentEntity, equipment);
-            var characterInventory = ItemsLookup[e];
+            var characterInventory = ItemsLookup[comp.CharacterEntity];
 
             foreach (var itemElement in characterInventory){
                 if (itemElement.ItemEntity != equipmentEntity &&
@@ -122,7 +122,7 @@ public partial struct EquipItemMainThreadJob : IJobEntity {
                 TargetsData = targetData
             });
 
-            Ecb.AddComponent(comp.CharacterEntity, new UpdateCharacterEquipmentTag());
+            Ecb.SetComponentEnabled<UpdateCharacterModelComponent>(comp.CharacterEntity, true);
 
             StateChangeSpawnElements.Add(new CharacterStateChangeSpawnElement(){
                 Character = comp.CharacterEntity,

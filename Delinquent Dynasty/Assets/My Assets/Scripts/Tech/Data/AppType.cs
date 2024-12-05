@@ -6,5 +6,5 @@
     PHOTO_MEDIA,
     GAME,
     MOD,
-    
+    COMMUNITY_BASED,
 }

@@ -69,72 +69,27 @@ public partial struct TriggerPhotoEffectJob : IJobEntity {
                 var actionData = ActionDataStore.ActionsBlobAssets.Value.GetActionBaseData(DynamicActionType);
 
                 var photo = new PhotoElement(){
-                    Timestamp = new EventTimestamp(InGameTime, originPhone)
+                    Data = new ImageData(){
+                        Timestamp = new EventTimestamp(InGameTime, originPhone)
+                    }
                 };
                 
-                if (DynamicActionType.Category == ActionCategory.SKILL_ITEMS){
-                    switch (DynamicActionType.SkillBasedItemActionType){
-                        case SkillBasedItemActionType.TAKE_SELFIE:
-                            var pos = TransformLookup[comp.CharacterEntity].Position;
-                            photo.CharactersInView.Add(new MediaMomentData(){
-                                Character = comp.CharacterEntity,
-                                ActionPerformed = new DynamicActionType(SkillBasedItemActionType.TAKE_SELFIE),
-                                Position = pos,
-                                ActionTarget = comp.CharacterEntity,
-                                ActionTargetType = TargetType.SELF
-                            });
+                if (DynamicActionType.Category == ActionCategory.SKILL_TECH){
+                    switch (DynamicActionType.SkillBasedTechActionType){
+                        case SkillBasedTechActionType.TAKE_SELFIE:
+                            var selfie = actionUtils.CaptureMediaMoment(TransformLookup, BehaviorCompLookup, ActionsLookup,
+                                TargetsLookup, comp.CharacterEntity, new MediaMomentData(){
+                                    ActionPerformed = new DynamicActionType(SkillBasedTechActionType.TAKE_SELFIE),
+                                    ActionTarget = comp.CharacterEntity,
+                                    ActionTargetType = TargetType.SELF
+                                }, true);
+                            photo.Data.CharactersInView.Add(selfie);
                             break;
-                        case SkillBasedItemActionType.TAKE_PHOTO_OF_CHARACTER:
+                        case SkillBasedTechActionType.TAKE_PHOTO_OF_CHARACTER:
                             var targ = targetData.GetTargetEntity(TargetType.TARGET_CHARACTER);
-                            var targPos = TransformLookup[targ].Position;
-                            var data = new MediaMomentData(){
-                                Character = targetData.GetTargetEntity(TargetType.TARGET_CHARACTER),
-                                ActionPerformed = new DynamicActionType(SkillBasedItemActionType.TAKE_SELFIE),
-                                Position = targPos,
-                                ActionTarget = comp.CharacterEntity,
-                                ActionTargetType = TargetType.SELF
-                            };
-                            
-                            var behavior = BehaviorCompLookup[targ];
-                            var activeActs = ActionsLookup[behavior.BehaviorEntity];
-                            var activeTargs = TargetsLookup[behavior.BehaviorEntity];
-                            foreach (var act in activeActs){
-                                if (act.HasStarted){
-                                    switch (act.ActionType.Category){
-                                        case ActionCategory.FIGHTING:
-                                        case ActionCategory.MISC:
-                                        case ActionCategory.GRAPPLING:
-                                        case ActionCategory.SKILL_SOCIAL:
-                                        case ActionCategory.COMMON_ITEMS:
-                                        case ActionCategory.COMMON_SOCIAL:
-                                        case ActionCategory.SKILL_ITEMS:
-                                            data.ActionPerformed = act.ActionType;
-                                            
-                                            foreach (var at in activeTargs){
-                                                if (at.ActionId == act.ActionId){
-                                                    switch (at.Data.TargetType){
-                                                        case TargetType.TARGET_CHARACTER:
-                                                        case TargetType.TARGET_ITEM:
-                                                            data.ActionTarget = at.Data.TargetEntity;
-                                                            data.ActionTargetType = at.Data.TargetType;
-                                                            break;
-                                                    }
-                                                }
-                                            }
-                                            
-                                            break;
-                                        case ActionCategory.LOCOMOTION:
-                                            break;
-                                    }
-                                }
-
-                                if (!data.ActionPerformed.IsNull){
-                                    break;
-                                }
-                            }
-                            
-                    
-                            photo.CharactersInView.Add(data);
+                            var data = actionUtils.CaptureMediaMoment(TransformLookup, BehaviorCompLookup, ActionsLookup,
+                                TargetsLookup, targ);
+                            photo.Data.CharactersInView.Add(data);
                             
                             break;
                         default:
@@ -240,8 +195,8 @@ public struct TriggerPhotoEffectUtil {
         _attributesLookup = state.GetBufferLookup<CharacterAttributeElement>();
         _skillsLookup = state.GetBufferLookup<SkillElement>();
         _passiveCompLookup = state.GetComponentLookup<PassiveEffectComponent>();
-        _photoLookup = state.GetBufferLookup<PhotoElement>();
         _accessCompLookup = state.GetComponentLookup<AccessKnowledgeComponent>();
+        _photoLookup = state.GetBufferLookup<PhotoElement>();
         _behaviorLookup = state.GetComponentLookup<CharacterBehaviorComponent>();
         _transformLookup = state.GetComponentLookup<LocalTransform>();
         _actionsLookup = state.GetBufferLookup<ActiveActionElement>();
@@ -256,8 +211,8 @@ public struct TriggerPhotoEffectUtil {
         _passivesLookup.Update(ref state);
         _attributesLookup.Update(ref state);
         _skillsLookup.Update(ref state);
-        _photoLookup.Update(ref state);
         _accessCompLookup.Update(ref state);
+        _photoLookup.Update(ref state);
         _actionsLookup.Update(ref state);
         _targetsLookup.Update(ref state);
         _behaviorLookup.Update(ref state);

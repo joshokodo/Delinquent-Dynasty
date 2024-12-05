@@ -6,6 +6,7 @@ public class ActiveEffectDTO {
     public ActiveEffectType activeEffectType;
     public TargetType effectPrimaryTarget;
     public TargetType effectSecondaryTarget;
+    public TargetType effectTertiaryTarget;
     public bool displayToWorld;
     public bool originLearnsKnowledge;
 
@@ -23,6 +24,7 @@ public class ActiveEffectDTO {
             ActiveEffectType = activeEffectType,
             EffectPrimaryTarget = effectPrimaryTarget,
             EffectSecondaryTarget = effectSecondaryTarget,
+            EffectTertiaryTarget = effectTertiaryTarget,
             PrimaryNumberScale = primaryNumberScale,
             PrimaryNumberScaleEnum = primaryEnumScale.ToData(),
             DisplayToWorld = displayToWorld,

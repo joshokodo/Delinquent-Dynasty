@@ -31,7 +31,7 @@ public struct TargetsGroup {
                 Targets.Add(new TargetsGroupData(){
                     Entity = targetElement.Data.TargetEntity,
                     TargetType = targetElement.Data.TargetType,
-                    EnumValue = targetElement.Data.EnumValue
+                    EnumValue = targetElement.Data.EnumValue,
                 });
             }
         }
@@ -174,4 +174,5 @@ public struct TargetsGroupData {
     public TargetType TargetType;
     public Entity Entity;
     public DynamicGameEnum EnumValue;
+    public FixedString32Bytes StringValue;
 }

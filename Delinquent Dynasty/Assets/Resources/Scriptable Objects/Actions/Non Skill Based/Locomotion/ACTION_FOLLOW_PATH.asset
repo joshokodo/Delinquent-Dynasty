@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_FOLLOW_PATH
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 6
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 6
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 0}
   targetTypes: 1e000000
   skillUsed: 34

@@ -5,7 +5,7 @@ public struct TimeUtils {
     private static FixedString64Bytes dateFormat = new("Day {0} of {1}, Year {2}");
 
     public static FixedString128Bytes GetGameDateString(EventTimestamp timestamp){
-        return GetGameDateString(timestamp.Day, timestamp.SeasonState, timestamp.Year);
+        return GetGameDateString(timestamp.TimeStamp.Day, timestamp.TimeStamp.SeasonState, timestamp.TimeStamp.Year);
     }
     
     public static FixedString128Bytes GetGameDateString(int days, TimeSeasonState seasonState, int years){

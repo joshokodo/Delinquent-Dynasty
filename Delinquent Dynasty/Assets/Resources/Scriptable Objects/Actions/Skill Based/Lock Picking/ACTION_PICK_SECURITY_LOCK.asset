@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_PICK_SECURITY_LOCK
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 1
-    MiscActionType: 0
+    skillBasedItemActionType: 1
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: 53369846646d45f48bfd7535d00ff3f5, type: 3}
   targetTypes: 1c000000
   skillUsed: 6

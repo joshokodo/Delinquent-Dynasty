@@ -11,9 +11,6 @@ public class TargetDTO {
     [FormerlySerializedAs("genericEnumDtoType")]
     public DynamicGameEnumDTO dynamicEnumDtoType;
 
-    public string stringValue;
-
-
     public TargetAssetData ToAssetData(){
         return new TargetAssetData(){
             Data = ToData()
@@ -25,7 +22,6 @@ public class TargetDTO {
             TargetType = targetType,
             EnumValue = dynamicEnumDtoType.ToData(),
             CountValue = intValue,
-            TargetString = stringValue
         };
     }
 }

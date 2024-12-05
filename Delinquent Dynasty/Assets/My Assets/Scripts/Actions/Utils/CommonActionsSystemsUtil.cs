@@ -6,4 +6,6 @@ using Unity.Jobs;
 using Unity.Transforms;
 using UnityEngine;
 
-public struct CommonActionsSystemsUtil { }
+public struct CommonActionsSystemsUtil {
+    
+}

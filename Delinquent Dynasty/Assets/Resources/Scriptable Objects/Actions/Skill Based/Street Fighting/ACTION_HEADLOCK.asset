@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_HEADLOCK
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 1
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 0
+    grapplingActionType: 1
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 0
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: 726ad90136e164996a602e578f958ab8, type: 3}
   targetTypes: 02000000
   skillUsed: 17
@@ -53,25 +55,29 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -89,30 +95,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -130,30 +140,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -171,21 +185,24 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryActionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       effectsOverTimeSecondsRate: 0
       applyToActionTargetCharacter: 1
       displayTriggerEffect: 0
+      sourcesLearnEffect: 0
       minIntValue: 1
       maxIntValue: 1
     - passiveEffectTriggerType: 14
@@ -194,25 +211,29 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -230,30 +251,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 2
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -271,30 +296,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -312,21 +341,24 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryActionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       effectsOverTimeSecondsRate: 10
       applyToActionTargetCharacter: 1
       displayTriggerEffect: 0
+      sourcesLearnEffect: 0
       minIntValue: -5
       maxIntValue: -1
     - passiveEffectTriggerType: 14
@@ -335,25 +367,29 @@ MonoBehaviour:
       bonusNumericType: 1
       bonusEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -371,30 +407,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 4
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -412,30 +452,34 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       secondaryEnumValue:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -453,21 +497,25 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
         classRoomSubject: 0
       primaryActionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       effectsOverTimeSecondsRate: 10
       applyToActionTargetCharacter: 0
       displayTriggerEffect: 0
+      sourcesLearnEffect: 0
       minIntValue: -3
       maxIntValue: -3
+    anyCondition: 0
     conditions: []

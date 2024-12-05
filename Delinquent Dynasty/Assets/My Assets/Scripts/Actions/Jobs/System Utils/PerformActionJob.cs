@@ -23,7 +23,8 @@ public partial struct PerformActionJob : IJobEntity {
     public DynamicBuffer<ActiveEffectSpawnElement> ActiveEffectSpawnSpawn;
     
     public EntityCommandBuffer Ecb;
-    public bool TriggerPassivesAfterPerformance;
+    
+    public bool TriggerPassivesAfterPerformance; // todo double check hard bc think we have to do it like this for a specific reason but if not, split back out into separate job/utils that we can reuse. im pretty sure we were doing that before but for some reason I did this. do for the other perform job/utils if we do it here
 
     public void Execute(Entity e, CharacterBehaviorEntityComponent comp, DynamicBuffer<ActiveActionElement> actions, DynamicBuffer<ActiveActionTargetElement> targets){
         
@@ -52,7 +53,7 @@ public partial struct PerformActionJob : IJobEntity {
             }
             
             if (actionUtils.HandlePerformance(activeAction, actions, index, TotalInGameSeconds, performTime, Ecb, e,
-                    PhaseAfterComplete)){
+                    PhaseAfterComplete, out _)){
                 
                 if (TriggerPassivesAfterPerformance){
                     ActionDataStore.ActionsBlobAssets.Value.SetActionPassives(activeAction.ActionId, e, comp.CharacterEntity, target, actData, skillLevel,

@@ -24,4 +24,5 @@ public struct CharacterStateChangeSpawnElement : IBufferElementData {
     public bool SkillLearned;
     public bool RecievedText;
     public Entity RecievedTextFrom;
+    public bool PhoneCallIncoming;
 }

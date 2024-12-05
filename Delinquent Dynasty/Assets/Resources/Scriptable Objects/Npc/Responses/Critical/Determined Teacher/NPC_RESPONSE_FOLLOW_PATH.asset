@@ -27,25 +27,29 @@ MonoBehaviour:
     externalEvents: 0
     xEnumType:
       actionCategory: 0
+      targetType: 0
       traitType:
         defaultCategory: 0
         geneticCategory: 0
         personalityCategory: 0
-        personalMaintenanceCategory: 0
+        wellBeingCategory: 0
         statusCategory: 0
       actionType:
-        LocomotionActionType: 0
-        FightingActionType: 0
-        GrapplingActionType: 0
-        CommonSocialActionType: 0
-        SkillBasedSocialActionType: 0
+        locomotionActionType: 0
+        fightingActionType: 0
+        grapplingActionType: 0
+        commonSocialActionType: 0
+        skillBasedSocialActionType: 0
         commonItemActionType: 0
-        SkillBasedItemActionType: 0
-        MiscActionType: 0
+        skillBasedItemActionType: 0
+        miscActionType: 0
+        skillBasedTechActionType: 0
+        commonTechActionType: 0
       WellnessType: 0
       AttributeType: 0
       RelationshipStatType: 0
-      RelationshipTitleType: 0
+      relationshipMainTitleType: 0
+      relationshipSubTitleType: 0
       ItemType:
         clothingCategory: 0
         meleeCategory: 0
@@ -63,43 +67,51 @@ MonoBehaviour:
       LocomotionState: 0
       KnowledgeType: 0
       generalInterestType: 0
-      interestInterestType: 0
+      interestSubjectType: 0
       roomType: 0
+      classRoomSubject: 0
   goalTypes: []
   actions:
   - DynamicActionType:
-      LocomotionActionType: 6
-      FightingActionType: 0
-      GrapplingActionType: 0
-      CommonSocialActionType: 0
-      SkillBasedSocialActionType: 0
+      locomotionActionType: 6
+      fightingActionType: 0
+      grapplingActionType: 0
+      commonSocialActionType: 0
+      skillBasedSocialActionType: 0
       commonItemActionType: 0
-      SkillBasedItemActionType: 0
-      MiscActionType: 0
+      skillBasedItemActionType: 0
+      miscActionType: 0
+      skillBasedTechActionType: 0
+      commonTechActionType: 0
+    iterations: 0
     targets:
     - targetType: 30
       intValue: 0
       dynamicEnumDtoType:
         actionCategory: 0
+        targetType: 0
         traitType:
           defaultCategory: 0
           geneticCategory: 0
           personalityCategory: 0
-          personalMaintenanceCategory: 0
+          wellBeingCategory: 0
           statusCategory: 0
         actionType:
-          LocomotionActionType: 0
-          FightingActionType: 0
-          GrapplingActionType: 0
-          CommonSocialActionType: 0
-          SkillBasedSocialActionType: 0
+          locomotionActionType: 0
+          fightingActionType: 0
+          grapplingActionType: 0
+          commonSocialActionType: 0
+          skillBasedSocialActionType: 0
           commonItemActionType: 0
-          SkillBasedItemActionType: 0
-          MiscActionType: 0
+          skillBasedItemActionType: 0
+          miscActionType: 0
+          skillBasedTechActionType: 0
+          commonTechActionType: 0
         WellnessType: 0
         AttributeType: 0
         RelationshipStatType: 0
-        RelationshipTitleType: 0
+        relationshipMainTitleType: 0
+        relationshipSubTitleType: 0
         ItemType:
           clothingCategory: 0
           meleeCategory: 0
@@ -117,9 +129,10 @@ MonoBehaviour:
         LocomotionState: 0
         KnowledgeType: 0
         generalInterestType: 0
-        interestInterestType: 0
+        interestSubjectType: 0
         roomType: 0
-      aliasValue: 
-      checkHasAlias: 0
+        classRoomSubject: 0
+      anyCondition: 0
       genericTargetConditions: []
+    anyCondition: 0
     actionConditions: []

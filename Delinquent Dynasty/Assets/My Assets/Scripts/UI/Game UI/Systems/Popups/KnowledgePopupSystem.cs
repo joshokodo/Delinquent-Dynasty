@@ -317,11 +317,11 @@ public partial class KnowledgePopupSystem : SystemBase {
 
         _headerTextStringBuilder
             .Append(" | ")
-            .Append(TimeUtils.GetGameTimeString(eventKnowledge.ActionTimestamp.TotalInGameSeconds))
+            .Append(TimeUtils.GetGameTimeString(eventKnowledge.ActionTimestamp.TimeStamp.TotalInGameSeconds))
             .Append(" ")
-            .Append(TimeUtils.GetGameDateString(eventKnowledge.ActionTimestamp.Day,
-                eventKnowledge.ActionTimestamp.SeasonState,
-                eventKnowledge.ActionTimestamp.Year));
+            .Append(TimeUtils.GetGameDateString(eventKnowledge.ActionTimestamp.TimeStamp.Day,
+                eventKnowledge.ActionTimestamp.TimeStamp.SeasonState,
+                eventKnowledge.ActionTimestamp.TimeStamp.Year));
 
         var performer = SystemAPI.GetComponent<CharacterBio>(eventKnowledge.PerformingEntity).FullName;
         var targets = string.Empty;
@@ -337,7 +337,7 @@ public partial class KnowledgePopupSystem : SystemBase {
                                       StringUtils.GetActionTypeString(eventKnowledge.ActionType) +
                                       (eventKnowledge.IsSuccessful ? " Successfully " : " Unsuccessfully ") + targets +
                                       " at " + TimeUtils.GetGameTimeSpanString(eventKnowledge.ActionTimestamp
-                                          .TotalInGameSeconds));
+                                          .TimeStamp.TotalInGameSeconds));
 
 
         return new BasicKnowledgeElementUI(){

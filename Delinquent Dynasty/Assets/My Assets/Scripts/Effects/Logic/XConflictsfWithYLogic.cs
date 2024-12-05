@@ -17,13 +17,14 @@ public struct XConflictsfWithYLogic : IApplyActiveEffect {
     [NativeDisableUnsafePtrRestriction] public RefRW<RandomComponent> RandomComponent;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         var foundInterest = new FixedList4096Bytes<EffectCommonStatData>();
         var found = false;
         var limit = nextIntValue <= 1 ? 1 : nextIntValue;
         
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
 
         foreach (var pi in PrimaryInterest){
             foreach (var si in SecondaryInterest){

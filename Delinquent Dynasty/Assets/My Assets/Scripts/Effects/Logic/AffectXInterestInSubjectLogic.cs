@@ -11,12 +11,13 @@ public struct AffectXInterestInSubjectLogic : IApplyActiveEffect {
     public DynamicBuffer<KnowledgeSpawnElement> KnowledgeSpawnElements;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         var foundInterest = false;
         var value = 0;
         
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
         
         for (int i = 0; i < PrimaryInterests.Length; i++){
             var element = PrimaryInterests[i];

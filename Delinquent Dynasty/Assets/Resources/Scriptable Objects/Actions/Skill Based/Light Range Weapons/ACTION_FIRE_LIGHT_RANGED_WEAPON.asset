@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: ACTION_FIRE_LIGHT_RANGED_WEAPON
   m_EditorClassIdentifier: 
   DynamicActionType:
-    LocomotionActionType: 0
-    FightingActionType: 0
-    GrapplingActionType: 0
-    CommonSocialActionType: 0
-    SkillBasedSocialActionType: 0
+    locomotionActionType: 0
+    fightingActionType: 6
+    grapplingActionType: 0
+    commonSocialActionType: 0
+    skillBasedSocialActionType: 0
     commonItemActionType: 0
-    SkillBasedItemActionType: 5
-    MiscActionType: 0
+    skillBasedItemActionType: 0
+    miscActionType: 0
+    skillBasedTechActionType: 0
+    commonTechActionType: 0
   actionSprite: {fileID: 21300000, guid: e7d19ad9f60e69a4a8eede67335cf0f4, type: 3}
   targetTypes: 02000000
   skillUsed: 7

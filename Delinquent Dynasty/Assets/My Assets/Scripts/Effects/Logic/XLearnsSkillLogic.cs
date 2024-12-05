@@ -6,11 +6,11 @@ public struct XLearnsSkillLogic : IApplyActiveEffect {
     public DynamicBuffer<SkillElement> Skills;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         
         primaryStateChange = default;
         secondaryStateChange = default;
-        
+        tertiaryStateChange = default;
         
         
         var added = SkillUtils.AddSkill(Skills, data.PrimaryEnumValue.SkillType,

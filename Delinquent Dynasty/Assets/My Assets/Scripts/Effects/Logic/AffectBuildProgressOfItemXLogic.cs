@@ -5,9 +5,11 @@ public struct AffectBuildProgressOfItemXLogic : IApplyActiveEffect {
     public EntityCommandBuffer Ecb;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
+        
         if (BuildInProgressLookup.TryGetComponent(primaryTarget, out ItemBuildInProgressComponent buildComp)){
             buildComp.AddBuildPercentage(nextIntValue);
             if (buildComp.DefectPercentage >= 100){ }

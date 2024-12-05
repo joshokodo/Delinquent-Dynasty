@@ -20,6 +20,7 @@ public partial struct CheckKnowledgeSystem : ISystem {
         _knowledgeLookup = SystemAPI.GetBufferLookup<CharacterKnowledgeElement>();
     }
 
+    //todo update clear knowledge logic
     [BurstCompile]
     public void OnUpdate(ref SystemState state){
         // _bsecb = SystemAPI.GetSingleton<BeginSimulationEntityCommandBufferSystem.Singleton>()

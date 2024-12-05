@@ -1,0 +1,11 @@
+﻿public enum SkillBasedTechActionType {
+       NONE,
+       TAKE_SELFIE,
+       TAKE_PHOTO_OF_POSITION,
+       TAKE_PHOTO_OF_CHARACTER,
+       TAKE_PHOTO_INTERACTABLE,
+       TAKE_PHOTO_OF_ITEM,
+       RECORD_VIDEO_OF_SELF,
+       RECORD_VIDEO_OF_CHARACTER,
+       RECORD_VIDEO_OF_INTERACTABLE,
+}

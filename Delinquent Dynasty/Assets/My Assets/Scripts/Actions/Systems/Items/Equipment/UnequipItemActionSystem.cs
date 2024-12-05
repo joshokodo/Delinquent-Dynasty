@@ -109,7 +109,7 @@ public partial struct UnequipItemMainThreadJob : IJobEntity {
                 TargetsData = targetData
             });
 
-            Ecb.AddComponent(comp.CharacterEntity, new UpdateCharacterEquipmentTag());
+            Ecb.SetComponentEnabled<UpdateCharacterModelComponent>(comp.CharacterEntity, true);
 
             StateChangeSpawnElements.Add(new CharacterStateChangeSpawnElement(){
                 Character = comp.CharacterEntity,

@@ -12,11 +12,11 @@ public partial struct TakeSelfieActionSystem : ISystem {
     public void OnCreate(ref SystemState state){
         state.RequireForUpdate<ArmsEyesActionFunction>();
         _perform.SetUp<ArmsEyesActionFunction>(ref state,
-            new DynamicActionType(SkillBasedItemActionType.TAKE_SELFIE), 0);
+            new DynamicActionType(SkillBasedTechActionType.TAKE_SELFIE), 0);
         _triggerEffects.SetUp<ArmsEyesActionFunction>(ref state,
-            new DynamicActionType(SkillBasedItemActionType.TAKE_SELFIE), 1);
+            new DynamicActionType(SkillBasedTechActionType.TAKE_SELFIE), 1);
         _triggerPhoto.SetUp<ArmsEyesActionFunction>(ref state,
-            new DynamicActionType(SkillBasedItemActionType.TAKE_SELFIE), 2);
+            new DynamicActionType(SkillBasedTechActionType.TAKE_SELFIE), 2);
     }
 
     [BurstCompile]

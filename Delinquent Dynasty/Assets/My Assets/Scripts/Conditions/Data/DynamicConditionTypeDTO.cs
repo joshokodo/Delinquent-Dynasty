@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine.Serialization;
 
 [Serializable]
 public struct DynamicConditionTypeDTO {
@@ -10,13 +11,14 @@ public struct DynamicConditionTypeDTO {
     public InterestConditionType interestConditionType;
     public InventoryConditionType inventoryConditionType;
     public ItemConditionType itemConditionType;
-    public LocomotionConditionType locomotionConditionType;
+    [FormerlySerializedAs("locomotionConditionType")] public LocationConditionType locationConditionType;
     public MiscConditionType miscConditionType;
     public RelationshipConditionType relationshipConditionType;
     public SkillConditionType skillConditionType;
     public TimeConditionType timeConditionType;
     public TraitConditionType traitConditionType;
     public WellnessConditionType wellnessConditionType;
+    public TechConditionType techConditionType;
 
     public DynamicConditionType ToData(){
         var val = GetEnumIntValue(out ConditionCategoryType type);
@@ -59,9 +61,9 @@ public struct DynamicConditionTypeDTO {
             enumType = ConditionCategoryType.INVENTORY;
             return (int) inventoryConditionType;
         }
-        if (locomotionConditionType != LocomotionConditionType.NONE){
-            enumType = ConditionCategoryType.LOCOMOTION;
-            return (int) locomotionConditionType;
+        if (locationConditionType != LocationConditionType.NONE){
+            enumType = ConditionCategoryType.LOCATION;
+            return (int) locationConditionType;
         }
         if (miscConditionType != MiscConditionType.NONE){
             enumType = ConditionCategoryType.MISC;
@@ -86,6 +88,11 @@ public struct DynamicConditionTypeDTO {
         if (wellnessConditionType != WellnessConditionType.NONE){
             enumType = ConditionCategoryType.WELLNESS;
             return (int) wellnessConditionType;
+        }
+        
+        if (techConditionType != TechConditionType.NONE){
+            enumType = ConditionCategoryType.TECH;
+            return (int) techConditionType;
         }
 
         enumType = default;

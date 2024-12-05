@@ -52,4 +52,7 @@ public struct SelectedCharacter : IComponentData {
     public AttributeType NotifyAttributeLeveledUp;
     public bool TriggerNotifyRecievedText;
     public Entity RecievedTextFrom;
+    
+    // academics
+    public bool updateAcademicsUI;
 }

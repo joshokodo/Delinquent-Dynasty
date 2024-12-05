@@ -8,6 +8,8 @@ public class CharacterBioPopup : Popup {
     public RelationshipsListView RelationshipListView;
     public SkillsListView SkillsListView;
     public InterestListView InterestListView;
+    public ClassPeriodListView ClassPeriodListView;
+    public TextMeshProUGUI AcademicsText;
     public TextMeshProUGUI InfoText;
     public TextMeshProUGUI NameTitleText;
     public TextMeshProUGUI GenenticTraitsText;

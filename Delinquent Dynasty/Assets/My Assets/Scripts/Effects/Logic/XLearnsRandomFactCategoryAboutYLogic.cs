@@ -16,10 +16,11 @@ public struct XLearnsRandomFactCategoryAboutYLogic : IApplyActiveEffect {
     [ReadOnly] public DynamicBuffer<WellnessElement> SecondaryWellness;
 
     public void Apply(Entity sourceEntity, Entity primaryTarget, ActiveEffectData data, int nextIntValue, out CharacterStateChangeSpawnElement primaryStateChange, out CharacterStateChangeSpawnElement secondaryStateChange,
-        Entity secondaryTarget = default){
+        out CharacterStateChangeSpawnElement tertiaryStateChange, Entity secondaryTarget = default, Entity tertiaryTarget = default){
         
         primaryStateChange = default;
         secondaryStateChange = default;
+        tertiaryStateChange = default;
         
         primaryStateChange.KnowledgedChanged = true;
         
